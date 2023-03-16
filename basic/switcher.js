@@ -10,7 +10,17 @@ module.exports = {
 		lobbyConnectionAttempt: /^Versuche auf die Lobby zu verbinden\.$/,
 		portalRoomConnectionAttempt: /^Versuche in den Portalraum zu verbinden\.$/,
 	},
+	joinDelay: 12000,
 	portalRoomSpawnBlock: [325, 66, 280],
+	rankCaps: {
+		'Spieler': 0,
+		'Premium': 50,
+		'Ultra': 50,
+		'Legende': 50,
+		'Titan': 85,
+		'Griefer': 115,
+		'Supreme': 150
+	},
 	relativePortalLocations: {
 		cb1: [-16, 0, 36],
 		cb2: [-16, 0, 28],

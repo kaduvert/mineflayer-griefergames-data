@@ -19,5 +19,5 @@ module.exports = {
 		insufficientPermissionsError: /^I'm sorry, but you do not have permission to perform this command\. Please contact the server administrators if you believe that this is in error\.$/,
 		insufficientPermissionsError: /^Unzureichende Rechte\.$/,
 	},
-	CMD_BATCH_DELAY: 3500
+	cmdBatchDelay: 3500
 }
