@@ -1,13 +1,7 @@
-// const EventEmitter = require('events')
-
-module.exports = function inject(bot, options) {
-	bot.chatAddPattern(/^$/, 'jailVoting')
-	bot.chatAddPattern(/^\[GrieferGames\] Du wurdest in das Gefängnis eingesperrt\.$/, 'jailIncarcerated')
-	bot.chatAddPattern(/^\[GrieferGames\] Du hast das Gefängnis verlassen\.$/, 'jailReleased')
-
-	bot.jail = {}
-
-
+module.exports = {
+	jailVoting: /^$/,
+	jailIncarcerated: /^\[GrieferGames\] Du wurdest in das Gefängnis eingesperrt\.$/,
+	jailReleased: /^\[GrieferGames\] Du hast das Gefängnis verlassen\.$/,
 }
 
 [GrieferGames] Bitte warte kurz...

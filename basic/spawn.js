@@ -1,4 +1,6 @@
 module.exports = {
-    spawnTeleport: /^Teleportiere\.\.\.$/
+    regex: {
+        spawnTeleport: /^Teleportiere\.\.\.$/
+    }
 }
 

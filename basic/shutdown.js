@@ -1,3 +1,5 @@
 module.exports = {
-    shutdownWarning: /^Der Server wird JETZT heruntergefahren!$/,
+    regex: {
+        shutdownWarning: /^Der Server wird JETZT heruntergefahren!$/,
+    }
 }

@@ -1,3 +1,5 @@
 module.exports = {
-    nearPlayersList: /^Spieler in der Nähe: (.+)$/
+    regex: {
+        nearPlayersList: /^Spieler in der Nähe: (.+)$/
+    }
 }
