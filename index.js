@@ -1,15 +1,15 @@
-function getAllModules() {
+function getAllData() {
     const branches = [
-        require('basic'),
-        require('advanced')
+        require('./basic'),
+        require('./advanced')
     ]
-    const modules = {}
+    const returnData = {}
     branches.forEach(modules => {
         Object.keys(modules).forEach(moduleName => {
-            modules[moduleName] = modules[moduleName]
+            returnData[moduleName] = modules[moduleName]
         })
     })
-    return modules
+    return returnData
 }
 
-module.exports = getAllModules()
+module.exports = getAllData()
