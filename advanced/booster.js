@@ -8,3 +8,5 @@ module.exports = {
         boosterBreakEffectRemoved: /^\[GrieferGames\] Der Fast-Break-Effekt wurde entfernt\.$/,
     }
 }
+
+[GrieferGames] Du hast nun wieder den Fast-Break-Effekt.
