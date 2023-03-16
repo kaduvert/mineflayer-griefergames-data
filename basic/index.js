@@ -1,0 +1,18 @@
+module.exports = {
+    plot: require('plot'),
+    ggauth: require('ggauth'),
+    globalChat: require('globalChat'),
+    home: require('home'),
+    itemClear: require('itemClear'),
+    mobRemover: require('mobRemover'),
+    money: require('money'),
+    mysteryMod: require('mysteryMod'),
+    near: require('near'),
+    playerUtils: require('playerUtils'),
+    privateChat: require('privateChat'),
+    shutdown: require('shutdown'),
+    spawn: require('spawn'),
+    switcher: require('switcher'),
+    tpa: require('tpa'),
+    warp: require('warp'),
+}
