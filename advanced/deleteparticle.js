@@ -1,3 +1,5 @@
+const DELETEPARTICLE_COMMAND_PREFIX = '/deleteparticle '
+
 module.exports = {
 	chatPatterns: {
 		deleteParticleListItem: /^ (\d+)\.\) Typ: (.+) - X: 12707\.\d+ Y: 67\.\d+ Z: 8416\.\d+$/, // deleteparticle
@@ -9,5 +11,10 @@ module.exports = {
 		deleteParticleNotOnPlotError: /^\[GrieferGames\] Du musst dich auf einem Grundstück befinden\.$/,
 		deleteParticleNotFoundError: /^\[GrieferGames\] In deiner Nähe befindet sich kein Partikel-Block\.$/, // deleteparticle
 		deleteParticleNotFoundError: /^\[GrieferGames\] Du hast keinen Partikel-Block, der gelöscht werden soll\.$/, // deleteparticle confirm
+	},
+	commands: {
+		getParticles: DELETEPARTICLE_COMMAND_PREFIX,
+		fromIndex: DELETEPARTICLE_COMMAND_PREFIX + '$1',
+		confirm: DELETEPARTICLE_COMMAND_PREFIX + 'confirm'
 	}
 }

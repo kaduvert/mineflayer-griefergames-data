@@ -21,7 +21,12 @@ module.exports = {
         plotSethomeError: /^\[GrieferGames\] Du musst auf dem Grundstück vertraut sein, um den Spawn-Punkt des Grundstücks zu versetzen\.$/,
         plotNotFoundError: /^\[GrieferGames\] Dein Suchmuster ergab keine Treffer\.$/,
     },
+    arrayEndIndicator: ']',
+    textFlagEndRegex: /, [a-z\_\-]:.+/,
+    IdSeparator: ';',
+    flagKeyValueSeparator: ':',
     multiLinePlotInfoRegex: /^ID: (-?\d+;-?\d+) \nAlias: ([^ ]+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: (.+) \nVertraut: (.+) \nVerboten: (.+) \nFlags: (.+)$/s,
+    infoNoPlayersIndicator: 'Keine',
     flagsSeparater: ', ',
     flagTypes: {
         'time': 'Number',
@@ -34,6 +39,6 @@ module.exports = {
         'farewell': 'Text'
     },
     commands: {
-        info: PLOT_COMMAND_PREFIX + 'info $1',
+        getInfo: PLOT_COMMAND_PREFIX + 'i $1',
     }
 }

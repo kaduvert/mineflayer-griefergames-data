@@ -12,5 +12,10 @@ module.exports = {
 		disguiseUnknownArgumentsError: /^Falsche Benutzung: (.+) sind unbekannte Argumente\.$/,
 		disguiseInsufficientPermissionsError: /^Du darfst das nicht tun\.$/,
 		disguisePluginForbidsActionError: /^Ein anderes Plugin verbietet es dir, diese Aktion auszuführen\.$/,
+	},
+	commands: {
+		as: '/d $1',
+		remove: '/ud',
+		getStatus: '/d status'
 	}
 }

@@ -5,5 +5,7 @@ module.exports = {
         startkickCountdown: /^\[GrieferGames\] Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,
         startkickVoting: /^\[GrieferGames\] Die Abstimmung, ging (\d+) zu (\d+) aus!$/,
         startkickResult: /^\[GrieferGames\] (\S+) wurde nicht bestraft$/,
-    }
+    },
+    multiLineRegex: /^\[StartKick\] Ersteller: (\S+)\n\[StartKick\] Dauer: (\S+) Sekunden\n\[StartKick\] Begründung: (.*)\n\[StartKick\] Stimme für oder gegen den Rauswurf von (\S+) ab:$/s,
+    
 }

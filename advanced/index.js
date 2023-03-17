@@ -6,7 +6,7 @@ module.exports = {
     // booster: require('./booster'),
     // caseOpening: require('./caseOpening'),
     // clan: require('./clan'),
-    deleteparticle: require('./deleteparticle'),
+    // deleteparticle: require('./deleteparticle'),
     disguise: require('./disguise'),
     // friends: require('./friends'),
     // hopper: require('./hopper'),
