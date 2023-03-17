@@ -6,5 +6,8 @@ module.exports = {
 
         moneyInsufficientError: /^Fehler: Du hast nicht genug Guthaben\.$/,
         moneyPlayerOfflineError: /^\[GrieferGames\] Dieser Spieler wurde nicht gefunden\.$/,
+    },
+    commands: {
+        transfer: '/pay $1 $2'
     }
 }

@@ -17,6 +17,6 @@ module.exports = {
     commands: {
         login: GLOBALCHAT_COMMAND_PREFIX + 'login',
         logout: GLOBALCHAT_COMMAND_PREFIX + 'logout',
-        send: '@',
+        send: '@$1',
     }
 }

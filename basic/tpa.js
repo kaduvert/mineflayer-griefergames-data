@@ -21,5 +21,12 @@ module.exports = {
         tpFailure: /^\[GrieferGames\] Du konntest nicht teleportiert werden\.$/,
         tpSpamWarning: /^Fehler: Zeit bis zur nächsten Teleportation: (now|\d+ Sekunden)$/,
         tpCountdown: /^Teleportierungsvorgang startet in (\d+) Sekunden\. Bewege dich nicht\.$/,
+    },
+    commands: {
+        request: '/tpa $1',
+        requestHere: '/tpahere $1',
+        accept: '/tpaccept',
+        deny: '/tpdeny',
+        toggle: '/tptoggle'
     }
 }

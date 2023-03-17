@@ -1,6 +1,9 @@
 module.exports = {
     chatPatterns: {
-        spawnTeleport: /^Teleportiere\.\.\.$/
+        teleport: /^Teleportiere\.\.\.$/
+    },
+    commands: {
+        teleport: '/spawn'
     }
 }
 
