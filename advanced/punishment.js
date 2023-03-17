@@ -20,7 +20,7 @@ module.exports = {
         punishmentCountdown: /^\[GrieferGames\] Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,
         punishmentResult: [
             /^\[GrieferGames\] Die Abstimmung, ging (\d+) zu (\d+) aus!$/,
-            /^\[GrieferGames\] (\S+) wurde (?:nicht) bestraft!?$/
+            /^\[GrieferGames\] (\S+) wurde (.+)$/
         ]
     }
 }
