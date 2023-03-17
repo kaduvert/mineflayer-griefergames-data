@@ -16,7 +16,7 @@ module.exports = {
     // profile: require('./profile'),
     // spawner: require('./spawner'),
     // specialPotions: require('./specialPotions'),
-    startkick: require('./startkick'),
+    startkick: require('./punishment'),
     status: require('./status'),
     // trails: require('./trails'),
     vote: require('./vote')

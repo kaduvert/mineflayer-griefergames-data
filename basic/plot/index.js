@@ -4,7 +4,6 @@ module.exports = {
     chatPatterns: {
         plotInfoStart: /^-+ Grundstücksinfo -+$/,
         plotInfoEnd: /^-+ GrieferGames -+$/,
-        plotInfoEnd: /^-+ GrieferGames -+$/,
         plotTeleport: /^\[GrieferGames\] Du wurdest zum Grundstück teleportiert\.$/,
         plotFlagAdded: /^\[GrieferGames\] Die Flag wurde erfolgreich hinzugefügt$/, // source for error if . is added at the end
         plotGreeting: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] .*$/,
@@ -42,3 +41,18 @@ module.exports = {
         getInfo: PLOT_COMMAND_PREFIX + 'i $1',
     }
 }
+
+/*
+plotInfo: [
+    /^-+ Grundstücksinfo -+$/,
+    /^ID: (-?\d+;-?\d+) $/,
+    /^Alias: ([^ ]+) $/,
+    /^Besitzer: +(.+) $/,
+    /^Biom: ([A-Z]+) $/,
+    /^Helfer: (.+) $/,
+    /^Vertraut: (.+) $/,
+    /^Verboten: (.+) $/,
+    /^Flags: (.+)$/,
+    /^-+ GrieferGames -+$/
+]
+*/

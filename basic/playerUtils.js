@@ -9,5 +9,13 @@ module.exports = {
         getInventory: '/invsee $1',
         getEnderChest: '/ec $1',
         getMiscView: '/view $1'
+    },
+    windows: {
+        enderChest: {
+            titleRegex: /^Ender Chest$/
+        },
+        miscView: {
+            titleRegex: /^Ansicht - (\S+)$/
+        }
     }
 }
