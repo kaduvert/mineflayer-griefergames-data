@@ -1,6 +1,9 @@
+const PLOT_COMMAND_PREFIX = '/p '
+
 module.exports = {
     chatPatterns: {
         plotInfoStart: /^-+ Grundstücksinfo -+$/,
+        plotInfoEnd: /^-+ GrieferGames -+$/,
         plotInfoEnd: /^-+ GrieferGames -+$/,
         plotTeleport: /^\[GrieferGames\] Du wurdest zum Grundstück teleportiert\.$/,
         plotFlagAdded: /^\[GrieferGames\] Die Flag wurde erfolgreich hinzugefügt$/, // source for error if . is added at the end
@@ -17,5 +20,20 @@ module.exports = {
         plotOwnerPermissionError: /^\[GrieferGames\] Diese Aktion kann nur der Besitzer des Grundstücks ausführen\.$/,
         plotSethomeError: /^\[GrieferGames\] Du musst auf dem Grundstück vertraut sein, um den Spawn-Punkt des Grundstücks zu versetzen\.$/,
         plotNotFoundError: /^\[GrieferGames\] Dein Suchmuster ergab keine Treffer\.$/,
+    },
+    multiLinePlotInfoRegex: /^ID: (-?\d+;-?\d+) \nAlias: ([^ ]+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: (.+) \nVertraut: (.+) \nVerboten: (.+) \nFlags: (.+)$/s,
+    flagsSeparater: ', ',
+    flagTypes: {
+        'time': 'Number',
+        'music': 'Number',
+        'use': 'Array',
+        'break': 'Array',
+        'place': 'Array',
+        'description': 'Text',
+        'greeting': 'Text',
+        'farewell': 'Text'
+    },
+    commands: {
+        info: PLOT_COMMAND_PREFIX + 'info $1',
     }
 }
