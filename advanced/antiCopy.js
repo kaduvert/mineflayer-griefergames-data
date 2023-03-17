@@ -1,5 +1,5 @@
 module.exports = {
-	regex: {
+	chatPatterns: {
 		mapAntiCopyProtectionAdded: /^\[AntiCopy\] Deine Karte ist nun geschützt\.$/,
 		mapAntiCopyProtectionRemoved: /^\[AntiCopy\] Der Schutz deiner Karte wurde entfernt\.$/,
 

@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         spawnTeleport: /^Teleportiere\.\.\.$/
     }
 }

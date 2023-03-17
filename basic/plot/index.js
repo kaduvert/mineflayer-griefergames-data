@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         plotInfoStart: /^-+ Grundstücksinfo -+$/,
         plotInfoEnd: /^-+ GrieferGames -+$/,
         plotTeleport: /^\[GrieferGames\] Du wurdest zum Grundstück teleportiert\.$/,

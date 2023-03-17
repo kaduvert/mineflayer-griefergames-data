@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         homeList: /^\[GrieferGames\] Deine Home-Punkte: (.+)$/,
         homesUnset: /^\[GrieferGames\] Du hast bisher (keine)n Home-Punkt erstellt\.$/,
 

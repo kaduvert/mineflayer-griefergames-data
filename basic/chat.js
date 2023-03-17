@@ -1,5 +1,5 @@
 module.exports = {
-	regex: {
+	chatPatterns: {
 		chatreset: /^\[Chat\] Der Chat wurde von \S+ ┃ \S+ auf normal gestellt\.$/,
 		slowchat: /^\[Chat\] Der Chat wurde von \S+ ┃ \S+ verlangsamt\.$/,
 		slowchatWarn: /^\[GrieferGames\] Du kannst nur jede 10 Sekunden schreiben\.$/,

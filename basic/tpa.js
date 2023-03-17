@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         tpaRequest: /^[^ ]+ ┃ ([^ ]+) möchte sich zu dir teleportieren\.$/,
         tpahereRequest: /^[^ ]+ ┃ ([^ ]+) möchte, dass du dich zu der Person teleportierst\.$/,
         tpaSent: /^Anfrage gesendet an \S+ ┃ (\S+)\.$/,

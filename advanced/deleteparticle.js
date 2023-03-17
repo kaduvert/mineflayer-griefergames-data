@@ -1,5 +1,5 @@
 module.exports = {
-	regex: {
+	chatPatterns: {
 		deleteParticleListItem: /^ (\d+)\.\) Typ: (.+) - X: 12707\.\d+ Y: 67\.\d+ Z: 8416\.\d+$/, // deleteparticle
 		deleteParticleChoose: /^\[GrieferGames\] Wähle einen Partikel-Effekt aus, welchen du löschen möchtest\.$/,
 

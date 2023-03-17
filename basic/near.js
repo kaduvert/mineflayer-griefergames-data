@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         nearPlayersList: /^Spieler in der Nähe: (.+)$/
     }
 }

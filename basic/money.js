@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         moneyCredited: /^\$(\d+) wurden zu deinem Konto hinzugefügt\.$/,
         moneyTransferred: /^Du hast \S+ ┃ (\S+) \$([\d,\.]+) gegeben\.$/,
         moneyReceived: /^\S+ ┃ (\S+) hat dir \$([\d,\.]+) gegeben\.$/,

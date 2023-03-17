@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         startkickStart: /^\[StartKick\] Soll der Spieler (\S+) rausgeworfen werden\? \/ja \/nein$/,
         startkickEnd: /^\[StartKick\] Stimme für oder gegen den Rauswurf von (\S+) ab:$/,
         startkickCountdown: /^\[GrieferGames\] Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,

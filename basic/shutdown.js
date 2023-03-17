@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         shutdownWarning: /^Der Server wird JETZT heruntergefahren!$/,
     }
 }

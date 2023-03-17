@@ -1,5 +1,5 @@
 module.exports = {
-	regex: {
+	chatPatterns: {
 		disguised: /^Du bist nun als (\S+) verkleidet\.$/,
 		disguiseRemoved: /^Du hast deine Verkleidung entfernt\.$/,
 

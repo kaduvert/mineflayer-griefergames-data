@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         boosterHeader: /^Folgende Booster sind auf diesem Server aktiv:$/,
         boosterStatus: /^(\S+)-Booster: (.+)$/,
         boosterActivated: /^\[Booster\] \S+ ┃ (\S+) hat für die GrieferGames Community den (\S+)-Booster für (\d+) Minuten aktiviert\.$/,
@@ -9,4 +9,4 @@ module.exports = {
     }
 }
 
-[GrieferGames] Du hast nun wieder den Fast-Break-Effekt.
+[GrieferGames] Du hast nun wieder den Fast - Break - Effekt.

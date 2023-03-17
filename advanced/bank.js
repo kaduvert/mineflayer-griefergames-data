@@ -1,5 +1,5 @@
 module.exports = {
-    regex: {
+    chatPatterns: {
         bankBalance: /^\[Bank\] Kontostand: (\d+)$/,
         bankDeposit: /^\[Bank\] Du hast 2000 auf dein Bankkonto eingezahlt\.$/,
         bankWithdrawl: /^\[Bank\] Du hast 2999 von deinem Bankkonto abgehoben\.$/,
