@@ -18,7 +18,7 @@ module.exports = {
     // prefix: require('./prefix'),
     // profile: require('./profile'),
     punishment: require('./punishment'),
-    // spawner: require('./spawner'),
+    spawner: require('./spawner'),
     // specialPotions: require('./specialPotions'),
     startJail: require('./startJail'),
     status: require('./status'),
