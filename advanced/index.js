@@ -14,9 +14,10 @@ module.exports = {
     mapInfo: require('./mapInfo'),
     // prefix: require('./prefix'),
     // profile: require('./profile'),
+    punishment: require('./punishment'),
     // spawner: require('./spawner'),
     // specialPotions: require('./specialPotions'),
-    punishment: require('./punishment'),
+    startJail: require('./startJail'),
     status: require('./status'),
     // trails: require('./trails'),
     vote: require('./vote')
