@@ -24,7 +24,8 @@ module.exports = {
             /^\[GrieferGames\] (\S+) wurde (.+)$/
         ],
         punishmentVote: /^\[GrieferGames\] Du hast für (Ja|Nein) gestimmt[!\.]$/,
-        punishmentChangeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/
+        punishmentChangeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/,
+        noPollError: /^\[GrieferGames\] Es läuft derzeit keine Abstimmung\.$/
     },
     commands: {
         voteYes: '/ja',
