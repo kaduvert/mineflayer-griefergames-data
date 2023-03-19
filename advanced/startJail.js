@@ -7,6 +7,7 @@ module.exports = {
 
         startJailHelp: /^\[StartJail\] Verwende: \/startjail \<Spieler\> \<Grund\>\. $/,
 
+        cooldownError: /^\[StartJail\] Bitte warte bis zum ([\d\.]+) ([\d:]+), um wieder eine Abstimmung zu starten\.$/,
         insufficientBalanceError: /^\[StartJail\] Dein Guthaben reicht leider nicht aus\.$/,
         noTokensError: /^\[StartJail\] Du hast keine Tokens mehr übrig\.$/
     },

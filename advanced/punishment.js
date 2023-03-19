@@ -22,7 +22,9 @@ module.exports = {
         punishmentResult: [
             /^\[GrieferGames\] Die Abstimmung, ging (\d+) zu (\d+) aus!$/,
             /^\[GrieferGames\] (\S+) wurde (.+)$/
-        ]
+        ],
+        punishmentVote: /^\[GrieferGames\] Du hast für (Ja|Nein) gestimmt[!\.]$/,
+        punishmentChangeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/
     }
 }
 /*
