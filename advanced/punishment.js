@@ -25,6 +25,10 @@ module.exports = {
         ],
         punishmentVote: /^\[GrieferGames\] Du hast für (Ja|Nein) gestimmt[!\.]$/,
         punishmentChangeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/
+    },
+    commands: {
+        voteYes: '/ja',
+        voteNo: '/nein'
     }
 }
 /*
