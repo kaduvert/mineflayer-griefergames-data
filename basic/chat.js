@@ -10,11 +10,12 @@ module.exports = {
 		spamWarning: /^\[GrieferGames\] Bitte warte kurz\.$/,
 		spamWarning: /^Bitte unterlasse das Spammen von Commands\!$/,
 		spamWarning: /^\[Switcher\] Daten werden noch heruntergeladen\. Bitte warte \.\.\.$/,
+		spamWarning: /^\[Chat\] Bitte warte einen kleinen Moment\.$/,
 
 		playerChatMessage: /^(?:\[.+\] )?(\S+) ┃ (\S+) » (.*)$/,
 		broadcast: /^\[Rundruf\] (.*)$/,
 
-		blacklistError: /^\S+ \| \S+ : (.*)/,
+		blacklistError: /^\S+ \| \S+ : (.*)$/,
 		unknownCommandError: /^Unknown command\. Type "\/help" for help\.$/,
 		insufficientPermissionsError: /^I'm sorry, but you do not have permission to perform this command\. Please contact the server administrators if you believe that this is in error\.$/,
 		insufficientPermissionsError: /^Unzureichende Rechte\.$/,

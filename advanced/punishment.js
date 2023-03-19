@@ -1,6 +1,7 @@
 module.exports = {
     chatPatterns: {
         startKick: [
+            /^\[StartKick\] Achtung - StartKick-Abstimmung$/,
             /^\[StartKick\] Soll der Spieler (\S+) rausgeworfen werden\? \/ja \/nein$/,
             /^\[StartKick\] Ersteller: (\S+)$/,
             /^\[StartKick\] Dauer: (\d+) Sekunden$/,
