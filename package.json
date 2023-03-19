@@ -1,0 +1,23 @@
+{
+  "name": "griefergames-data",
+  "version": "0.1.0",
+  "description": "Contains data for use with mineflayer bots directed at the popular german minecraft server GrieferGames (griefergames.net)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KadaverBrutalo10/node-griefergames-data.git"
+  },
+  "keywords": [
+    "griefergames",
+    "minecraft"
+  ],
+  "author": "kaduvert",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/KadaverBrutalo10/node-griefergames-data/issues"
+  },
+  "homepage": "https://github.com/KadaverBrutalo10/node-griefergames-data#readme"
+}
