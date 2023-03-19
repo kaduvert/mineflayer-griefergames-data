@@ -13,6 +13,8 @@ module.exports = {
         plotPlayerEntered: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] ([^ ]+) betrat dein Grundstück\.$/,
         plotPlayerLeft: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] ([^ ]+) verließ dein Grundstück\.$/,
 
+        plotInvalidNumberError: /^\[GrieferGames\] Das ist keine gültige Zahl\.$/,
+        plotDeniedError: /^\[GrieferGames\] Du bist auf diesem Grundstück gebannt\.$/,
         plotFlagMustBeSetError: /^\[GrieferGames\] Die Flag (\S+) muss gesetzt sein, damit du diese Aktion ausführen kannst\.$/,
         plotMissingPermission: /^\[GrieferGames\] Dir fehlt die Berechtigung (\S+)\.$/,
         plotUnclaimedError: /^\[GrieferGames\] Das Grundstück (-?\d+;-?\d+) hat bisher keinen Besitzer\.$/,
@@ -38,6 +40,7 @@ module.exports = {
         'farewell': 'Text'
     },
     commands: {
+        goto: '/p h $1',
         getInfo: PLOT_COMMAND_PREFIX + 'i $1',
     }
 }
