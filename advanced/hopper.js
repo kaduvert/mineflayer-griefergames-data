@@ -1,3 +1,4 @@
+/*
 [Trichter] Der Trichter hat keine geänderten Einstellungen die angezeigt werden können.
 [Trichter] Das Verbinden wurde aktiviert. Klicke auf den gewünschten Endpunkt.
 [Trichter] Der Verbindungsmodus wurde beendet.
@@ -8,3 +9,4 @@
 [Trichter] Der minimale Sammelradius wurde erreicht.
 
 [Trichter] Der Transport wurde geändert.
+*/

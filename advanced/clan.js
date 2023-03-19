@@ -1,3 +1,4 @@
+/*
 [Clan] Informationen zur Clan-Verwaltung
 [Clan] Du bist derzeit in keinem Clan.
 [Clan] Du musst 3 Sekunden warten, bevor du diesen Befehl erneut ausführen kannst.
@@ -16,3 +17,4 @@ Clan-Mitglieder:
 ------------[ Clan-Mitglieder ]------------
 
 [Clan]  VatosLocos  - [-VL-] - 133.789.718,75$
+*/

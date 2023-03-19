@@ -1,3 +1,4 @@
+/*
 [Profil] Du hast dein eigenes Profil geöffnet.
 [Profil] Du hast bisher noch kein Geschlecht angegeben.
 [Profil] Dein Alter muss eine Zahl sein.
@@ -22,3 +23,4 @@
 
 [Profil] Du hast das Profil von XHunter86X geöffnet.
 [GrieferGames] Es wurde kein Spieler unter diesem Namen gefunden.
+*/

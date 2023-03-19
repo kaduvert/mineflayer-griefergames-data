@@ -9,4 +9,4 @@ module.exports = {
     }
 }
 
-[GrieferGames] Du hast nun wieder den Fast - Break - Effekt.
+// [GrieferGames] Du hast nun wieder den Fast - Break - Effekt.
