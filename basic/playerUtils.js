@@ -10,12 +10,9 @@ module.exports = {
         getEnderChest: '/ec $1',
         getMiscView: '/view $1'
     },
-    windows: {
-        enderChest: {
-            titleRegex: /^Ender Chest$/
-        },
-        miscView: {
-            titleRegex: /^Ansicht - (\S+)$/
-        }
+    windowPatterns: {
+        inventory: /^Inventory$/,
+        enderChest: /^Ender Chest$/,
+        miscView: /^Ansicht - (\S+)$/,
     }
 }
