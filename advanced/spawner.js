@@ -2,8 +2,11 @@ module.exports = {
     chatPatterns: {
         
         spawnerAlreadyOpenedError: /^\[GrieferGames\] Der Spawner ist aktuell von (\S+) geöffnet\.$/,
-        noSpawnerOpenPermissionsError: /^\[GrieferGames\] Du hast aktuell keinen Zugriff auf den Spawner\.$/
+        noSpawnerOpenPermissionsError: /^\[GrieferGames\] Du hast aktuell keinen Zugriff auf den Spawner\.$/,
 
+        availableExperienceCollected: /^\[GrieferGames\] Du hast (\d+) Erfahrungspunkte erhalten\.$/,
+        
+        noFreeInventorySpaceError: /^\[GrieferGames\] Du hast keinen freien Platz im Inventar\.$/,
         /*
         spawnerPassiveModeActivated: /^\[GrieferGames\] Der Passiv-Modus des Spawners wurde aktiviert\.$/,
         [GrieferGames] Der Zugriff auf das Lager ist nun gesperrt.
@@ -14,6 +17,7 @@ module.exports = {
         [GrieferGames] Der Spawner ist nicht freigegeben.
         */
     },
+    storageWindowTimeout: 30 * 1000,
     windowPatterns: {
         inactiveSpawnerMenu: /^Spawner - Aktivieren$/,
         spawnerStorage: /^Spawner - Lager$/,
