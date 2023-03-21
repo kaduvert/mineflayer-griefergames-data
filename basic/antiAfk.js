@@ -1,3 +1,5 @@
 module.exports = {
-    windowTitle: 'Bist du AFK?'
+    windowPatterns: {
+        afkPopup: /^Bist du AFK\?$/
+    }
 }
