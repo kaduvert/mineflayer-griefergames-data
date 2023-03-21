@@ -1,6 +1,6 @@
 module.exports = {
     plot: require('./plot'),
-    antiAfk: require('./antiAfk'),
+    afk: require('./afk'),
     chat: require('./chat'),
     ggauth: require('./ggauth'),
     globalChat: require('./globalChat'),
