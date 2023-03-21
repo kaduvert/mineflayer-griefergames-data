@@ -9,6 +9,7 @@ module.exports = {
         noFreeInventorySpaceError: /^\[GrieferGames\] Du hast keinen freien Platz im Inventar\.$/,
         /*
         spawnerPassiveModeActivated: /^\[GrieferGames\] Der Passiv-Modus des Spawners wurde aktiviert\.$/,
+        [GrieferGames] Der Passiv-Modus des Spawners wurde deaktiviert.
         [GrieferGames] Der Zugriff auf das Lager ist nun gesperrt.
         [GrieferGames] Der Zugriff auf das Lager ist nun freigegeben.
         [GrieferGames] Der Zugriff auf die Einstellungen wurde für vertraute Spieler aktiviert.
