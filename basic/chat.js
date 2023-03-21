@@ -1,9 +1,5 @@
 module.exports = {
 	chatPatterns: {
-		chatreset: /^\[Chat\] Der Chat wurde von \S+ ┃ \S+ auf normal gestellt\.$/,
-		slowchat: /^\[Chat\] Der Chat wurde von \S+ ┃ \S+ verlangsamt\.$/,
-		slowchatWarn: /^\[GrieferGames\] Du kannst nur jede 10 Sekunden schreiben\.$/,
-
 		spamWarning: /^\[\S+\] Du kannst diesen Befehl erst nach (\d+) Sekunden benutzen\.$/,
 		spamWarning: /^\[\S+\] Du musst (\d+) Sekunden warten, bevor du diesen Befehl erneut ausführen kannst\.$/,
 		spamWarning: /^\[\S+\] Du kannst diesen Befehl nur alle (\d+) Sekunden benutzen\.$/,
