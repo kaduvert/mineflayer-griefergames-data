@@ -1,12 +1,12 @@
 module.exports = {
     chatPatterns: {
-        homeList: /^\[GrieferGames\] Deine Home-Punkte: (.+)$/,
-        homesUnset: /^\[GrieferGames\] Du hast bisher (keine)n Home-Punkt erstellt\.$/,
+        list: /^\[GrieferGames\] Deine Home-Punkte: (.+)$/,
+        unset: /^\[GrieferGames\] Du hast bisher (keine)n Home-Punkt erstellt\.$/,
 
-        homeSet: /^\[GrieferGames\] Der Home-Punkt wurde auf deine aktuelle Position gesetzt\.$/,
-        homeDeleted: /^\[GrieferGames\] Der Home-Punkt (\S+) wurde gelöscht\.$/,
+        set: /^\[GrieferGames\] Der Home-Punkt wurde auf deine aktuelle Position gesetzt\.$/,
+        deleted: /^\[GrieferGames\] Der Home-Punkt (\S+) wurde gelöscht\.$/,
 
-        homeNotFoundError: /^\[GrieferGames\] Der Home-Punkt (\S+) wurde nicht gefunden. Nutze \/sethome, um diesen zu setzen\.$/,
+        notFoundError: /^\[GrieferGames\] Der Home-Punkt (\S+) wurde nicht gefunden. Nutze \/sethome, um diesen zu setzen\.$/,
     },
     commands: {
         getHomes: '/homes',

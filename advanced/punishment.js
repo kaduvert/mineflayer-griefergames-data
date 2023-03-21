@@ -18,13 +18,13 @@ module.exports = {
             /^\[StartJail\] Stimme für oder gegen die Bestrafung von (\S+) ab:$/,
             /^\[GrieferGames\] +\[Dafür\] - \[Dagegen\]$/
         ],
-        punishmentCountdown: /^\[GrieferGames\] Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,
-        punishmentResult: [
+        countdown: /^\[GrieferGames\] Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,
+        result: [
             /^\[GrieferGames\] Die Abstimmung, ging (\d+) zu (\d+) aus!$/,
             /^\[GrieferGames\] (\S+) wurde (.+)$/
         ],
-        punishmentVote: /^\[GrieferGames\] Du hast für (Ja|Nein) gestimmt[!\.]$/,
-        punishmentChangeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/,
+        vote: /^\[GrieferGames\] Du hast für (Ja|Nein) gestimmt[!\.]$/,
+        changeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/,
         noPollError: /^\[GrieferGames\] Es läuft derzeit keine Abstimmung\.$/
     },
     commands: {

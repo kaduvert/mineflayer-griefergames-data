@@ -1,8 +1,8 @@
 module.exports = {
     windowPatterns: {
-        afkPopup: /^Bist du AFK\?$/
+        challange: /^Bist du AFK\?$/
     },
     itemPatterns: {
-        notAfk: /^Ich bin nicht AFK!$/
+        solveChallange: /^Ich bin nicht AFK!$/
     }
 }

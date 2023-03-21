@@ -1,8 +1,8 @@
 module.exports = {
     chatPatterns: {
         
-        spawnerAlreadyOpenedError: /^\[GrieferGames\] Der Spawner ist aktuell von (\S+) geöffnet\.$/,
-        noSpawnerOpenPermissionsError: /^\[GrieferGames\] Du hast aktuell keinen Zugriff auf den Spawner\.$/,
+        alreadyOpenedError: /^\[GrieferGames\] Der Spawner ist aktuell von (\S+) geöffnet\.$/,
+        noOpenPermissionsError: /^\[GrieferGames\] Du hast aktuell keinen Zugriff auf den Spawner\.$/,
 
         availableExperienceCollected: /^\[GrieferGames\] Du hast (\d+) Erfahrungspunkte erhalten\.$/,
         
@@ -20,9 +20,9 @@ module.exports = {
     },
     storageWindowTimeout: 30 * 1000,
     windowPatterns: {
-        inactiveSpawnerMenu: /^Spawner - Aktivieren$/,
-        spawnerStorage: /^Spawner - Lager$/,
-        spawnerStats: /^Spawner - Statistik$/,
+        inactiveMenu: /^Spawner - Aktivieren$/,
+        storage: /^Spawner - Lager$/,
+        stats: /^Spawner - Statistik$/,
     },
     itemPatterns: {
         // deactivated spawner stuff

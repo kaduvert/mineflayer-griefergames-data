@@ -1,6 +1,6 @@
 module.exports = {
 	chatPatterns: {
-		mapInfo: [
+		info: [
 			/^Information für die Karte (\S+):$/,
 			/^Minecraft Server ID: (.*)$/,
 			/^Dynamische ID: (\d+)$/,
@@ -15,7 +15,7 @@ module.exports = {
 			/^Data Size: (\d+)bytes$/,
 			/^First (\d+) bytes: \[([A-Fa-f\d]+)\]$/
 		],
-		mapInfoNoDataError: /^Die Karte enthält keine Daten!$/,
+		noDataError: /^Die Karte enthält keine Daten!$/,
 	},
 	commands: {
 		get: '/mapinfo'

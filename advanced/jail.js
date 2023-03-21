@@ -1,7 +1,6 @@
 module.exports = {
-	jailVoting: /^$/,
-	jailIncarcerated: /^\[GrieferGames\] Du wurdest in das Gefängnis eingesperrt\.$/,
-	jailReleased: /^\[GrieferGames\] Du hast das Gefängnis verlassen\.$/,
+	incarcerated: /^\[GrieferGames\] Du wurdest in das Gefängnis eingesperrt\.$/,
+	released: /^\[GrieferGames\] Du hast das Gefängnis verlassen\.$/,
 }
 /*
 [GrieferGames] Bitte warte kurz...

@@ -3,7 +3,9 @@ function getAllData() {
         require('./basic'),
         require('./advanced')
     ]
-    const returnData = {}
+    const returnData = {
+        patternHeadNameSeparator: '->' // example event name: chat:itemClear->nextIn
+    }
     branches.forEach(modules => {
         Object.keys(modules).forEach(moduleName => {
             returnData[moduleName] = modules[moduleName]

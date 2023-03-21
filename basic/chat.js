@@ -8,7 +8,7 @@ module.exports = {
 		spamWarning: /^\[Switcher\] Daten werden noch heruntergeladen\. Bitte warte \.\.\.$/,
 		spamWarning: /^\[Chat\] Bitte warte einen kleinen Moment\.$/,
 
-		playerChatMessage: /^(?:\[.+\] )?(\S+) ┃ (\S+) » (.*)$/,
+		playerMessage: /^(?:\[.+\] )?(\S+) ┃ (\S+) » (.*)$/,
 		broadcast: /^\[Rundruf\] (.*)$/,
 
 		blacklistError: /^\S+ \| \S+ : (.*)$/,

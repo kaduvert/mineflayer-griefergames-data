@@ -1,11 +1,11 @@
 module.exports = {
     chatPatterns: {
-        boosterHeader: /^Folgende Booster sind auf diesem Server aktiv:$/,
-        boosterStatus: /^(\S+)-Booster: (.+)$/,
-        boosterActivated: /^\[Booster\] \S+ ┃ (\S+) hat für die GrieferGames Community den (\S+)-Booster für (\d+) Minuten aktiviert\.$/,
-        boosterFlyExpiredWarning: /^\[Booster\] Der Fly-Booster ist beendet\. Dein Flugmodus wird deaktiviert\.\.\.$/,
-        boosterDeactivated: /^\[Booster\] Der (\S+)-Booster ist jetzt wieder deaktiviert\.$/,
-        boosterBreakEffectRemoved: /^\[GrieferGames\] Der Fast-Break-Effekt wurde entfernt\.$/,
+        header: /^Folgende Booster sind auf diesem Server aktiv:$/,
+        status: /^(\S+)-Booster: (.+)$/,
+        activated: /^\[Booster\] \S+ ┃ (\S+) hat für die GrieferGames Community den (\S+)-Booster für (\d+) Minuten aktiviert\.$/,
+        flyExpiredWarning: /^\[Booster\] Der Fly-Booster ist beendet\. Dein Flugmodus wird deaktiviert\.\.\.$/,
+        deactivated: /^\[Booster\] Der (\S+)-Booster ist jetzt wieder deaktiviert\.$/,
+        breakEffectRemoved: /^\[GrieferGames\] Der Fast-Break-Effekt wurde entfernt\.$/,
     }
 }
 

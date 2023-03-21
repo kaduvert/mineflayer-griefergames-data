@@ -1,22 +1,23 @@
 module.exports = {
     chatPatterns: {
-        tpaRequest: /^[^ ]+ ┃ ([^ ]+) möchte sich zu dir teleportieren\.$/,
-        tpahereRequest: /^[^ ]+ ┃ ([^ ]+) möchte, dass du dich zu der Person teleportierst\.$/,
-        tpaSent: /^Anfrage gesendet an \S+ ┃ (\S+)\.$/,
-        tpaAccepted: /^\S+ | (\S+) hat deine Teleportierungsanfrage angenommen\.$/,
-        tpaRefused: /^\S+ | (\S+) hat deine Teleportierungsanfrage abgelehnt\.$/,
+        request: /^[^ ]+ ┃ ([^ ]+) möchte sich zu dir teleportieren\.$/,
+        hereRequest: /^[^ ]+ ┃ ([^ ]+) möchte, dass du dich zu der Person teleportierst\.$/,
+        sent: /^Anfrage gesendet an \S+ ┃ (\S+)\.$/,
+        accepted: /^\S+ | (\S+) hat deine Teleportierungsanfrage angenommen\.$/,
+        refused: /^\S+ | (\S+) hat deine Teleportierungsanfrage abgelehnt\.$/,
 
-        tpaActivated: /^Teleportation aktiviert\.$/,
-        tpaDeactivated: /^Teleportation deaktiviert\.$/,
-        tpaToggled: /^Fehler: \S+ ┃ (\S+) verweigert die Teleportierung\.$/,
-        tpaDenied: /^Teleportierungsanfrage verweigert\.$/,
+        activated: /^Teleportation aktiviert\.$/,
+        deactivated: /^Teleportation deaktiviert\.$/,
+        toggled: /^Fehler: \S+ ┃ (\S+) verweigert die Teleportierung\.$/,
+        denied: /^Teleportierungsanfrage verweigert\.$/,
 
-        tpaExpired: /^Fehler: Teleportierungsanfrage ist abgelaufen\.$/,
-        tpaNull: /^Fehler: null$/,
-        tpaNotFound: /^Fehler: Du hast keine Teleportierungsanfragen\.$/,
-        tpaDisallowed: /^\[GrieferGames\] Du darfst auf diesem Grundstück keine Teleportationsbefehle ausführen\.$/,
+        expiredError: /^Fehler: Teleportierungsanfrage ist abgelaufen\.$/,
+        nullError: /^Fehler: null$/,
+        notFoundError: /^Fehler: Du hast keine Teleportierungsanfragen\.$/,
+        disallowedError: /^\[GrieferGames\] Du darfst auf diesem Grundstück keine Teleportationsbefehle ausführen\.$/,
+        
         tpa: /^teleportieren zu [^ ]+ ┃ ([^ ]+)\.$/,
-        tpaCancelled: /^Laufende Teleportierung abgebrochen\.$/,
+        cancelled: /^Laufende Teleportierung abgebrochen\.$/,
 
         tpFailure: /^\[GrieferGames\] Du konntest nicht teleportiert werden\.$/,
         tpSpamWarning: /^Fehler: Zeit bis zur nächsten Teleportation: (now|\d+ Sekunden)$/,

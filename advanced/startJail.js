@@ -5,7 +5,7 @@ module.exports = {
         purchaseSuccess: /^\[StartJail\] Du hast erfolgreich einen Gefängnis-Token gekauft\.$/,
         purchaseCancelled: /^\[StartJail\] Die Transaktion wurde abgebrochen\.$/,
 
-        startJailHelp: /^\[StartJail\] Verwende: \/startjail \<Spieler\> \<Grund\>\. $/,
+        help: /^\[StartJail\] Verwende: \/startjail \<Spieler\> \<Grund\>\. $/,
 
         cooldownError: /^\[StartJail\] Bitte warte bis zum ([\d\.]+) ([\d:]+), um wieder eine Abstimmung zu starten\.$/,
         insufficientBalanceError: /^\[StartJail\] Dein Guthaben reicht leider nicht aus\.$/,

@@ -6,12 +6,12 @@ module.exports = {
         noPayoutsError: /^\[GrieferGames\] Es sind keine Gewinne verfügbar\.$/,
     },
     windowPatterns: {
-        lotteryMenu: /^Lotterie$/,
+        menu: /^Lotterie$/,
     },
     npc: {
         identifier: 'Lotterie',
         position: [139, 25, -30],
         world: 'stadt',
-        onInteract: 'windowOpen:lotteryMenu',
+        onInteract: 'windowOpen:lottery->menu',
     }
 }

@@ -1,10 +1,10 @@
 module.exports = {
     chatPatterns: {
-        orbSaleSuccessful: /^\[Orbs\] Du hast erfolgreich ([\d\.]+) (.+) für ([\d\.]+) Orbs verkauft\.$/
+        saleSuccessful: /^\[Orbs\] Du hast erfolgreich ([\d\.]+) (.+) für ([\d\.]+) Orbs verkauft\.$/
     },
     windowPatterns: {
-        orbTradeMenu: /^Händler$/,
-        orbSellItem: /^Orbs - Verkauf (.+)$/
+        menu: /^Händler$/,
+        sellItem: /^Orbs - Verkauf (.+)$/
     },
     itemPatterns: {
         sellOption: {
@@ -18,7 +18,7 @@ module.exports = {
         identifier: 'Händler',
         position: [172, 25, -42],
         world: 'stadt',
-        onInteract: 'windowOpen:orbTradeMenu',
+        onInteract: 'windowOpen:orbTrader->menu',
     },
     windowSafeAfter: 250,
 }
