@@ -15,7 +15,7 @@ module.exports = {
     serverInfo: require('./serverInfo'),
     shutdown: require('./shutdown'),
     spawn: require('./spawn'),
-    switcher: require('./switcher'),
+    switch: require('./switch'),
     tpa: require('./tpa'),
     warp: require('./warp'),
 }
