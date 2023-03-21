@@ -6,7 +6,13 @@ module.exports = {
 		notOwnerError: /^\[AntiCopy\] Du kannst nur den Schutz deiner Karten ausschalten\.$/,
 		spamWarning: /^\[AntiCopy\] Du kannst diesen Befehl nur alle (\d+) Sekunden ausführen\.$/,
 	},
-	loreRegex: /^Ersteller der Karte: (\S+)$/,
+	itemPatterns: {
+		protectedMap: {
+			lore: [
+				/^Ersteller der Karte: (\S+)$/
+			]
+		}
+	},
 	commands: {
 		toggleProtection: '/anticopy'
 	}

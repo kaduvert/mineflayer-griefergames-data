@@ -1,6 +1,6 @@
 module.exports = {
 	chatPatterns: {
-		as: /^Du bist nun als (\S+) verkleidet\.$/,
+		disguised: /^Du bist nun als (\S+) verkleidet\.$/,
 		removed: /^Du hast deine Verkleidung entfernt\.$/,
 
 		status: /^Du bist als bat verkleidet\.$/,

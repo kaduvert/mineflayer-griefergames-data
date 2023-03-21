@@ -9,9 +9,9 @@ module.exports = {
         notFoundError: /^\[GrieferGames\] Der Home-Punkt (\S+) wurde nicht gefunden. Nutze \/sethome, um diesen zu setzen\.$/,
     },
     commands: {
-        getHomes: '/homes',
-        setHome: '/sethome $1',
-        deleteHome: '/delhome $1',
+        get: '/homes',
+        set: '/sethome $1',
+        delete: '/delhome $1',
         teleportTo: '/home $1'
     }
 }

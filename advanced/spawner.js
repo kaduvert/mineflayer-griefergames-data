@@ -20,7 +20,7 @@ module.exports = {
     },
     storageWindowTimeout: 30 * 1000,
     windowPatterns: {
-        inactiveMenu: /^Spawner - Aktivieren$/,
+        inactive: /^Spawner - Aktivieren$/,
         storage: /^Spawner - Lager$/,
         stats: /^Spawner - Statistik$/,
     },
