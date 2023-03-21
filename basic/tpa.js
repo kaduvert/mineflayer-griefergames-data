@@ -8,9 +8,9 @@ module.exports = {
 
         activated: /^Teleportation aktiviert\.$/,
         deactivated: /^Teleportation deaktiviert\.$/,
-        toggled: /^Fehler: \S+ ┃ (\S+) verweigert die Teleportierung\.$/,
         denied: /^Teleportierungsanfrage verweigert\.$/,
-
+        
+        toggledError: /^Fehler: \S+ ┃ (\S+) verweigert die Teleportierung\.$/,
         expiredError: /^Fehler: Teleportierungsanfrage ist abgelaufen\.$/,
         nullError: /^Fehler: null$/,
         notFoundError: /^Fehler: Du hast keine Teleportierungsanfragen\.$/,
