@@ -18,10 +18,6 @@ module.exports = {
         
         tpa: /^teleportieren zu [^ ]+ ┃ ([^ ]+)\.$/,
         cancelled: /^Laufende Teleportierung abgebrochen\.$/,
-
-        tpFailure: /^\[GrieferGames\] Du konntest nicht teleportiert werden\.$/,
-        tpSpamWarning: /^Fehler: Zeit bis zur nächsten Teleportation: (now|\d+ Sekunden)$/,
-        tpCountdown: /^Teleportierungsvorgang startet in (\d+) Sekunden\. Bewege dich nicht\.$/,
     },
     commands: {
         request: '/tpa $1',

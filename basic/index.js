@@ -16,6 +16,7 @@ module.exports = {
     shutdown: require('./shutdown'),
     spawn: require('./spawn'),
     switch: require('./switch'),
+    // teleport: require('./teleport'),
     tpa: require('./tpa'),
     warp: require('./warp'),
 }
