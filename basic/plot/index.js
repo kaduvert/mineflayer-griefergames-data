@@ -6,11 +6,11 @@ module.exports = {
         infoStart: /^-+ Grundstücksinfo -+$/,
         infoEnd: /^-+ GrieferGames -+$/,
         teleport: /^\[GrieferGames\] Du wurdest zum Grundstück teleportiert\.$/,
-        flagAdded: /^\[GrieferGames\] Die Flag wurde erfolgreich hinzugefügt$/, // source for error if . is added at the end
+        flagAdded: /^\[GrieferGames\] Die Flag wurde erfolgreich hinzugefügt\.?$/, // currently, there is no . at the end
         greeting: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] .*$/,
         chatActivated: /^\[GrieferGames\] Die Einstellung chat wurde aktiviert\.$/, // merge?
         chatDeactivated: /^\[GrieferGames\] Die Einstellung chat wurde deaktiviert\.$/,
-        chatMessage: /^\[Plot-Chat\]\[(-?\d+;-?\d+)\] \S+ ┃ (\S+) : (.*)$/,
+        chatMessage: /^\[Plot-Chat\] *\[(-?\d+;-?\d+)\] \S+ ┃ (\S+) : (.*)$/, // currently, there is no space between plot chat and id
         playerEntered: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] ([^ ]+) betrat dein Grundstück\.$/,
         playerLeft: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] ([^ ]+) verließ dein Grundstück\.$/,
 
