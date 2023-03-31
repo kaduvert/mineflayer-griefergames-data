@@ -10,7 +10,7 @@ module.exports = {
         greeting: /^$GG \[(-?\d+;-?\d+)\] .*$/,
         chatActivated: /^$GG Die Einstellung chat wurde aktiviert\.$/, // merge?
         chatDeactivated: /^$GG Die Einstellung chat wurde deaktiviert\.$/,
-        chatMessage: /^\[Plot-Chat\] *\[(-?\d+;-?\d+)\] \S+ ┃ (\S+) : (.*)$/, // currently, there is no space between plot chat and id
+        chatMessage: /^\[Plot-Chat\] ?\[(-?\d+;-?\d+)\] \S+ ┃ (\S+) : (.*)$/, // currently, there is no space between plot chat and id
         playerEntered: /^$GG \[(-?\d+;-?\d+)\] ([^ ]+) betrat dein Grundstück\.$/,
         playerLeft: /^$GG \[(-?\d+;-?\d+)\] ([^ ]+) verließ dein Grundstück\.$/,
 
