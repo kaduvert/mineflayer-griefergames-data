@@ -1,4 +1,5 @@
 const COMMAND_PREFIX = '/p '
+const PLOT_ACTION_COMMAND_PREFIX = COMMAND_PREFIX + '$1 '
 
 module.exports = {
     chatPatterns: {
@@ -40,8 +41,27 @@ module.exports = {
         'farewell': 'Text'
     },
     commands: {
-        goto: '/p h $1',
+        goto: COMMAND_PREFIX + 'h $1',
         getInfo: COMMAND_PREFIX + 'i $1',
+        gotoMiddle: PLOT_ACTION_COMMAND_PREFIX + 'middle',
+
+        setAlias: PLOT_ACTION_COMMAND_PREFIX + 'alias set $2',
+        removeAlias: PLOT_ACTION_COMMAND_PREFIX + 'alias remove',
+
+        setBiome: PLOT_ACTION_COMMAND_PREFIX + 'biome $2',
+
+        kick: PLOT_ACTION_COMMAND_PREFIX + 'kick $2',
+        ban: PLOT_ACTION_COMMAND_PREFIX + 'deny $2',
+
+        add: PLOT_ACTION_COMMAND_PREFIX + 'add $2',
+        trust: PLOT_ACTION_COMMAND_PREFIX + 'trust $2',
+
+        remove: PLOT_ACTION_COMMAND_PREFIX + 'remove $2',
+
+        setDescription: PLOT_ACTION_COMMAND_PREFIX + 'desc $2',
+        removeDescription: PLOT_ACTION_COMMAND_PREFIX + 'desc',
+
+        setFlag: PLOT_ACTION_COMMAND_PREFIX + 'flag set $2 $3'
     }
 }
 
