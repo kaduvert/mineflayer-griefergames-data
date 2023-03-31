@@ -1,12 +1,12 @@
-const regexAliases = {
+const globalRegexAliases = {
     '\\$GG': '\\[GrieferGames\\]'
 }
 
 function transformPattern(regex) {
     let regexString = regex.toString()
     regexString = regexString.substring(1, regexString.length - 1)
-    Object.keys(regexAliases).forEach(alias => {
-        regexString = regexString.replace(new RegExp(alias, 'g'), regexAliases[alias])
+    Object.keys(globalRegexAliases).forEach(alias => {
+        regexString = regexString.replace(new RegExp(alias, 'g'), globalRegexAliases[alias])
     })
     return new RegExp(regexString)
 }
@@ -25,7 +25,7 @@ function getAllData() {
 
             // pattern alias logic
             const chatPatterns = returnData[moduleName].chatPatterns
-            if (Object.keys(chatPatterns).length) {
+            if (chatPatterns && Object.keys(chatPatterns).length) {
                 Object.keys(chatPatterns).forEach(patternKey => {
                     const chatPattern = chatPatterns[patternKey]
                     if (chatPattern instanceof Array) {
