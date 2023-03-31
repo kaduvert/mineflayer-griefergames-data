@@ -1,7 +1,7 @@
 module.exports = {
     chatPatterns: {
-        presentCollected: /^\[GrieferGames\] Du hast deine Geschenke abgeholt\.$/,
-        noPresentsError: /^\[GrieferGames\] Du kannst keine weiteren Geschenke abholen\.$/,
+        presentCollected: /^$GG Du hast deine Geschenke abgeholt\.$/,
+        noPresentsError: /^$GG Du kannst keine weiteren Geschenke abholen\.$/,
     },
     commands: {
         getInfo: '/vote',

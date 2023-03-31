@@ -5,23 +5,23 @@ module.exports = {
     chatPatterns: {
         infoStart: /^-+ Grundstücksinfo -+$/,
         infoEnd: /^-+ GrieferGames -+$/,
-        teleport: /^\[GrieferGames\] Du wurdest zum Grundstück teleportiert\.$/,
-        flagAdded: /^\[GrieferGames\] Die Flag wurde erfolgreich hinzugefügt\.?$/, // currently, there is no . at the end
-        greeting: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] .*$/,
-        chatActivated: /^\[GrieferGames\] Die Einstellung chat wurde aktiviert\.$/, // merge?
-        chatDeactivated: /^\[GrieferGames\] Die Einstellung chat wurde deaktiviert\.$/,
+        teleport: /^$GG Du wurdest zum Grundstück teleportiert\.$/,
+        flagAdded: /^$GG Die Flag wurde erfolgreich hinzugefügt\.?$/, // currently, there is no . at the end
+        greeting: /^$GG \[(-?\d+;-?\d+)\] .*$/,
+        chatActivated: /^$GG Die Einstellung chat wurde aktiviert\.$/, // merge?
+        chatDeactivated: /^$GG Die Einstellung chat wurde deaktiviert\.$/,
         chatMessage: /^\[Plot-Chat\] *\[(-?\d+;-?\d+)\] \S+ ┃ (\S+) : (.*)$/, // currently, there is no space between plot chat and id
-        playerEntered: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] ([^ ]+) betrat dein Grundstück\.$/,
-        playerLeft: /^\[GrieferGames\] \[(-?\d+;-?\d+)\] ([^ ]+) verließ dein Grundstück\.$/,
+        playerEntered: /^$GG \[(-?\d+;-?\d+)\] ([^ ]+) betrat dein Grundstück\.$/,
+        playerLeft: /^$GG \[(-?\d+;-?\d+)\] ([^ ]+) verließ dein Grundstück\.$/,
 
-        invalidNumberError: /^\[GrieferGames\] Das ist keine gültige Zahl\.$/,
-        deniedError: /^\[GrieferGames\] Du bist auf diesem Grundstück gebannt\.$/,
-        flagMustBeSetError: /^\[GrieferGames\] Die Flag (\S+) muss gesetzt sein, damit du diese Aktion ausführen kannst\.$/,
-        missingPermissionError: /^\[GrieferGames\] Dir fehlt die Berechtigung (\S+)\.$/,
-        unclaimedError: /^\[GrieferGames\] Das Grundstück (-?\d+;-?\d+) hat bisher keinen Besitzer\.$/,
-        ownerPermissionError: /^\[GrieferGames\] Diese Aktion kann nur der Besitzer des Grundstücks ausführen\.$/,
-        sethomeNotTrustedError: /^\[GrieferGames\] Du musst auf dem Grundstück vertraut sein, um den Spawn-Punkt des Grundstücks zu versetzen\.$/,
-        notFoundError: /^\[GrieferGames\] Dein Suchmuster ergab keine Treffer\.$/,
+        invalidNumberError: /^$GG Das ist keine gültige Zahl\.$/,
+        deniedError: /^$GG Du bist auf diesem Grundstück gebannt\.$/,
+        flagMustBeSetError: /^$GG Die Flag (\S+) muss gesetzt sein, damit du diese Aktion ausführen kannst\.$/,
+        missingPermissionError: /^$GG Dir fehlt die Berechtigung (\S+)\.$/,
+        unclaimedError: /^$GG Das Grundstück (-?\d+;-?\d+) hat bisher keinen Besitzer\.$/,
+        ownerPermissionError: /^$GG Diese Aktion kann nur der Besitzer des Grundstücks ausführen\.$/,
+        sethomeNotTrustedError: /^$GG Du musst auf dem Grundstück vertraut sein, um den Spawn-Punkt des Grundstücks zu versetzen\.$/,
+        notFoundError: /^$GG Dein Suchmuster ergab keine Treffer\.$/,
     },
     arrayEndIndicator: ']',
     textFlagEndRegex: /, [a-z\_\-]:.+/,

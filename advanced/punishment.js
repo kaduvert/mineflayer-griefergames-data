@@ -7,7 +7,7 @@ module.exports = {
             /^\[StartKick\] Dauer: (\d+) Sekunden$/,
             /^\[StartKick\] Begründung: (.*)$/,
             /^\[StartKick\] Stimme für oder gegen den Rauswurf von (\S+) ab:$/,
-            /^\[GrieferGames\] +\[Dafür\] - \[Dagegen\]$/
+            /^$GG +\[Dafür\] - \[Dagegen\]$/
         ],
         startJail: [
             /^\[StartJail\] Achtung - StartJail-Abstimmung$/,
@@ -16,16 +16,16 @@ module.exports = {
             /^\[StartJail\] Dauer: (\d+) Sekunden$/,
             /^\[StartJail\] Begründung: (.*)$/,
             /^\[StartJail\] Stimme für oder gegen die Bestrafung von (\S+) ab:$/,
-            /^\[GrieferGames\] +\[Dafür\] - \[Dagegen\]$/
+            /^$GG +\[Dafür\] - \[Dagegen\]$/
         ],
-        countdown: /^\[GrieferGames\] Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,
+        countdown: /^$GG Die Abstimmung, den Spieler (\S+) zu bestrafen, endet in (\d+) Sekunden!$/,
         result: [
-            /^\[GrieferGames\] Die Abstimmung, ging (\d+) zu (\d+) aus!$/,
-            /^\[GrieferGames\] (\S+) wurde (.+)$/
+            /^$GG Die Abstimmung, ging (\d+) zu (\d+) aus!$/,
+            /^$GG (\S+) wurde (.+)$/
         ],
-        vote: /^\[GrieferGames\] Du hast für (Ja|Nein) gestimmt[!\.]$/,
-        changeOpinionError: /^\[GrieferGames\] Du kannst deine Stimme nur einmal ändern\.$/,
-        noPollError: /^\[GrieferGames\] Es läuft derzeit keine Abstimmung\.$/
+        vote: /^$GG Du hast für (Ja|Nein) gestimmt[!\.]$/,
+        changeOpinionError: /^$GG Du kannst deine Stimme nur einmal ändern\.$/,
+        noPollError: /^$GG Es läuft derzeit keine Abstimmung\.$/
     },
     commands: {
         voteYes: '/ja',

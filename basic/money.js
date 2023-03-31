@@ -5,7 +5,7 @@ module.exports = {
         received: /^\S+ ┃ (\S+) hat dir \$([\d,\.]+) gegeben\.$/,
 
         insufficientError: /^Fehler: Du hast nicht genug Guthaben\.$/,
-        playerOfflineError: /^\[GrieferGames\] Dieser Spieler wurde nicht gefunden\.$/,
+        playerOfflineError: /^$GG Dieser Spieler wurde nicht gefunden\.$/,
     },
     commands: {
         transfer: '/pay $1 $2'

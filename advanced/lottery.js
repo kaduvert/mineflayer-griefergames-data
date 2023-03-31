@@ -1,9 +1,9 @@
 module.exports = {
     chatPatterns: {
-        ticketPurchaseSuccess: /^\[GrieferGames\] Du hast erfolgreich ein Los erworben\.$/,
-        payout: /^\[GrieferGames\] Du hast ([\d\.]+)\$ erhalten\.$/,
+        ticketPurchaseSuccess: /^$GG Du hast erfolgreich ein Los erworben\.$/,
+        payout: /^$GG Du hast ([\d\.]+)\$ erhalten\.$/,
 
-        noPayoutsError: /^\[GrieferGames\] Es sind keine Gewinne verfügbar\.$/,
+        noPayoutsError: /^$GG Es sind keine Gewinne verfügbar\.$/,
     },
     windowPatterns: {
         menu: /^Lotterie$/,

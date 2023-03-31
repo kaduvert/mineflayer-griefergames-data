@@ -1,6 +1,6 @@
 module.exports = {
-	incarcerated: /^\[GrieferGames\] Du wurdest in das Gefängnis eingesperrt\.$/,
-	released: /^\[GrieferGames\] Du hast das Gefängnis verlassen\.$/,
+	incarcerated: /^$GG Du wurdest in das Gefängnis eingesperrt\.$/,
+	released: /^$GG Du hast das Gefängnis verlassen\.$/,
 }
 /*
 [GrieferGames] Bitte warte kurz...

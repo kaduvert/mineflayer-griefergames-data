@@ -9,13 +9,13 @@ module.exports = {
         activated: /^Teleportation aktiviert\.$/,
         deactivated: /^Teleportation deaktiviert\.$/,
         denied: /^Teleportierungsanfrage verweigert\.$/,
-        
+
         toggledError: /^Fehler: \S+ ┃ (\S+) verweigert die Teleportierung\.$/,
         expiredError: /^Fehler: Teleportierungsanfrage ist abgelaufen\.$/,
         nullError: /^Fehler: null$/,
         notFoundError: /^Fehler: Du hast keine Teleportierungsanfragen\.$/,
-        disallowedError: /^\[GrieferGames\] Du darfst auf diesem Grundstück keine Teleportationsbefehle ausführen\.$/,
-        
+        disallowedError: /^$GG Du darfst auf diesem Grundstück keine Teleportationsbefehle ausführen\.$/,
+
         tpa: /^teleportieren zu [^ ]+ ┃ ([^ ]+)\.$/,
         cancelled: /^Laufende Teleportierung abgebrochen\.$/,
     },
