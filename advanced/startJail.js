@@ -43,7 +43,7 @@ module.exports = {
         },
     },
     windowPatterns: {
-        startJailMenu: /^Gefängnis-Token$/,
+        menu: /^Gefängnis-Token$/,
         confirmPurchase: /^Kaufbestätigung$/
     }
 }
