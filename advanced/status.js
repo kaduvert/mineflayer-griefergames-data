@@ -1,4 +1,4 @@
-const STATUS_COMMAND_PREFIX = '/status '
+const COMMAND_PREFIX = '/status '
 
 module.exports = {
 	chatPatterns: {
@@ -7,7 +7,7 @@ module.exports = {
 		deactivated: /^\[Status\] Du hast den Status beim Joinen deaktiviert\.$/,
 	},
 	commands: {
-		set: STATUS_COMMAND_PREFIX + '$1',
-		toggle: STATUS_COMMAND_PREFIX + 'toggle',
+		set: COMMAND_PREFIX + '$1',
+		toggle: COMMAND_PREFIX + 'toggle',
 	}
 }

@@ -1,4 +1,4 @@
-const GLOBALCHAT_COMMAND_PREFIX = '/globalchat '
+const COMMAND_PREFIX = '/globalchat '
 
 module.exports = {
     chatPatterns: {
@@ -15,8 +15,8 @@ module.exports = {
         serverUnmuted: /^\[GlobalChat\] Du hast den Server (.+) entmutet\.$/,
     },
     commands: {
-        login: GLOBALCHAT_COMMAND_PREFIX + 'login',
-        logout: GLOBALCHAT_COMMAND_PREFIX + 'logout',
+        login: COMMAND_PREFIX + 'login',
+        logout: COMMAND_PREFIX + 'logout',
         send: '@$1',
     }
 }

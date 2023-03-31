@@ -1,4 +1,4 @@
-const PLOT_COMMAND_PREFIX = '/p '
+const COMMAND_PREFIX = '/p '
 
 module.exports = {
     chatPatterns: {
@@ -41,7 +41,7 @@ module.exports = {
     },
     commands: {
         goto: '/p h $1',
-        getInfo: PLOT_COMMAND_PREFIX + 'i $1',
+        getInfo: COMMAND_PREFIX + 'i $1',
     }
 }
 

@@ -1,4 +1,4 @@
-const STARTJAIL_COMMAND_PREFIX = '/startjail '
+const COMMAND_PREFIX = '/startjail '
 
 module.exports = {
     chatPatterns: {
@@ -12,9 +12,9 @@ module.exports = {
         noTokensError: /^\[StartJail\] Du hast keine Tokens mehr übrig\.$/
     },
     commands: {
-        help: STARTJAIL_COMMAND_PREFIX,
-        openWindow: STARTJAIL_COMMAND_PREFIX + 'buy',
-        target: STARTJAIL_COMMAND_PREFIX + '$1 $2'
+        help: COMMAND_PREFIX,
+        openWindow: COMMAND_PREFIX + 'buy',
+        target: COMMAND_PREFIX + '$1 $2'
     },
     itemPatterns: {
         purchaseToken: {

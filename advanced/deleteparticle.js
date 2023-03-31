@@ -1,4 +1,4 @@
-const DELETEPARTICLE_COMMAND_PREFIX = '/deleteparticle '
+const COMMAND_PREFIX = '/deleteparticle '
 
 module.exports = {
 	chatPatterns: {
@@ -13,8 +13,8 @@ module.exports = {
 		notFoundError: /^\[GrieferGames\] Du hast keinen Partikel-Block, der gelöscht werden soll\.$/, // deleteparticle confirm
 	},
 	commands: {
-		getParticles: DELETEPARTICLE_COMMAND_PREFIX,
-		fromIndex: DELETEPARTICLE_COMMAND_PREFIX + '$1',
-		confirm: DELETEPARTICLE_COMMAND_PREFIX + 'confirm'
+		getParticles: COMMAND_PREFIX,
+		fromIndex: COMMAND_PREFIX + '$1',
+		confirm: COMMAND_PREFIX + 'confirm'
 	}
 }

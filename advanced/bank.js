@@ -1,4 +1,4 @@
-const BANK_COMMAND_PREFIX = '/bank '
+const COMMAND_PREFIX = '/bank '
 
 module.exports = {
     chatPatterns: {
@@ -12,8 +12,8 @@ module.exports = {
         spamWarning: /^\[Bank\] Du kannst diesen Befehl nur alle (\d+) Sekunden benutzen\.$/,
     },
     commands: {
-        getBalance: BANK_COMMAND_PREFIX + 'guthaben',
-        deposit: BANK_COMMAND_PREFIX + 'einzahlen $1',
-        withdraw: BANK_COMMAND_PREFIX + 'abheben $1'
+        getBalance: COMMAND_PREFIX + 'guthaben',
+        deposit: COMMAND_PREFIX + 'einzahlen $1',
+        withdraw: COMMAND_PREFIX + 'abheben $1'
     }
 }
