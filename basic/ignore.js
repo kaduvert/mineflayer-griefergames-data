@@ -1,3 +1,5 @@
+const COMMAND_PREFIX = '/ignore '
+
 module.exports = {
   chatPatterns: {
     add: /^Du ignorierst ab jetzt Spieler (\S+)\.$/,
