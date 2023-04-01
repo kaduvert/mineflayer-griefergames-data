@@ -5,6 +5,7 @@ module.exports = {
     ggauth: require('./ggauth'),
     globalChat: require('./globalChat'),
     homes: require('./homes'),
+    ignore: require('./ignore'),
     itemClear: require('./itemClear'),
     mobRemover: require('./mobRemover'),
     money: require('./money'),
