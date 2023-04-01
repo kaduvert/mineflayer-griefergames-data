@@ -10,6 +10,12 @@ module.exports = {
 		lobbyConnectionAttempt: /^Versuche auf die Lobby zu verbinden\.$/,
 		portalRoomConnectionAttempt: /^Versuche in den Portalraum zu verbinden\.$/,
 	},
+	hologramPatterns: {
+		serverStatus: [
+			/^(Online|Offline|Wartung)$/,
+			/^(\d+)\/(\d+)$/
+		]
+	},
 	joinDelay: 12 * 1000,
 	portalRoomSpawnBlock: [325, 66, 280],
 	rankCaps: {
