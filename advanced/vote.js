@@ -7,6 +7,12 @@ module.exports = {
         getInfo: '/vote',
         collectPresent: '/geschenk'
     },
+    chatActions: {
+        collectPresent: {
+            successEvent: 'presentCollected',
+            failureEvent: 'noPresents'
+        }
+    },
     windowPatterns: {
         streakMenu: /^Vote-System$/
     },

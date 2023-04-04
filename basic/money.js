@@ -9,5 +9,11 @@ module.exports = {
     },
     commands: {
         transfer: '/pay $1 $2'
+    },
+    chatActions: {
+        transfer: {
+            successEvent: 'transferred',
+            failureEvents: ['insufficientError', 'playerOfflineError']
+        }
     }
 }

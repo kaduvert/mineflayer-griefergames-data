@@ -18,5 +18,19 @@ module.exports = {
         login: COMMAND_PREFIX + 'login',
         logout: COMMAND_PREFIX + 'logout',
         send: '@$1',
-    }
+    },
+    chatActions: {
+        login: {
+            successEvent: 'activated',
+            failureEvent: 'alreadyActivated',
+        },
+        logout: {
+            successEvent: 'deativated',
+            failureEvent: 'alreadyDeativated'
+        },
+        send: {
+            successEvent: 'misc:sentMessage',
+            failureEvent: 'deactivatedError',
+        }
+    },
 }

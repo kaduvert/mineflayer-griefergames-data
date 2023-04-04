@@ -25,5 +25,27 @@ module.exports = {
         accept: '/tpaccept',
         deny: '/tpdeny',
         toggle: '/tptoggle'
+    },
+    chatActions: {
+        request: {
+            successEvent: 'sent',
+            failureEvents: ['toggledError', 'disallowedError']
+        },
+        requestHere: {
+            successEvent: 'sent',
+            failureEvents: ['toggledError', 'disallowedError']
+        },
+        accept: {
+            successEvent: 'accepted',
+            failureEvents: ['disallowedError', 'notFoundError', 'expiredError']
+        },
+        deny: {
+            successEvent: 'denied',
+            failureEvents: ['notFoundError', 'nullError']
+        },
+        toggle: {
+            successEvents: ['activated', 'deactivated'],
+            failureEvents: ['notFoundError', 'nullError']
+        }
     }
 }

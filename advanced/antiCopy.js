@@ -15,5 +15,11 @@ module.exports = {
 	},
 	commands: {
 		toggleProtection: '/anticopy'
+	},
+	chatActions: {
+		toggleProtection: {
+			successEvents: ['protectionAdded', 'protectionRemoved'],
+            failureEvent: 'notOwnerError'
+		}
 	}
 }

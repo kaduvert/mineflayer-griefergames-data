@@ -6,5 +6,14 @@ module.exports = {
     commands: {
         getList: '/warps',
         to: '/warp $1'
+    },
+    chatActions: {
+        getList: {
+            successEvent: 'list'
+        },
+        to: {
+            successEvent: 'forcedMove',
+            failureEvent: 'spamWarning'
+        } // TODO: use teleport.js
     }
 }

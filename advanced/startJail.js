@@ -13,7 +13,7 @@ module.exports = {
     },
     commands: {
         help: COMMAND_PREFIX,
-        openWindow: COMMAND_PREFIX + 'buy',
+        openMenu: COMMAND_PREFIX + 'buy',
         target: COMMAND_PREFIX + '$1 $2'
     },
     itemPatterns: {
@@ -45,5 +45,33 @@ module.exports = {
     windowPatterns: {
         menu: /^Gefängnis-Token$/,
         confirmPurchase: /^Kaufbestätigung$/
+    },
+    chatActions: {
+        target: { // TODO: find solution
+            successEvent: 'misc:startJail:',// + username,
+            failureEvents: ['help', 'noTokensError']
+        },
+        openMenu: {
+            successEvent: 'windowOpen:menu'
+        }
+    },
+    windowActions: {
+        menu: {
+            startTokenPurchase: {
+                itemToClick: 'purchaseToken',
+                successEvent: 'windowOpen:confirmPurchase'
+            }
+        },
+        confirmPurchase: {
+            confirmTokenPurchase: {
+                itemToClick: 'confirmPurchase',
+                successEvent: 'purchaseSuccess',
+                failureEvent: 'insufficientBalanceError'
+            },
+            cancelTokenPurchase: {
+                itemToClick: 'cancelPurchase',
+                successEvent: 'purchaseCancelled',
+            }
+        }
     }
 }

@@ -14,5 +14,19 @@ module.exports = {
         inventory: /^Inventory$/,
         enderChest: /^Ender Chest$/,
         miscView: /^Ansicht - (\S+)$/,
+    },
+    chatActions: {
+        getInventory: {
+            successEvent: 'windowOpen:inventory',
+            failureEvent: 'playerNotFoundError'
+        },
+        getEnderChest: {
+            successEvent: 'windowOpen:enderChest',
+            failureEvent: 'playerNotFoundError'
+        },
+        getMiscView: {
+            successEvent: 'windowOpen:miscView',
+            failureEvent: 'playerNotFoundError'
+        }
     }
 }

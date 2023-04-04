@@ -9,5 +9,15 @@ module.exports = {
 	commands: {
 		set: COMMAND_PREFIX + '$1',
 		toggle: COMMAND_PREFIX + 'toggle',
+	},
+	chatActions: {
+		set: {
+			successEvent: 'set',
+			failureEvent: 'insufficientPermissionsError'
+		},
+		toggle: {
+			successEvents: ['activated', 'deactivated'],
+            failureEvent: 'insufficientPermissionsError'
+		}
 	}
 }

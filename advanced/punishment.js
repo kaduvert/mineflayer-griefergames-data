@@ -30,6 +30,16 @@ module.exports = {
     commands: {
         voteYes: '/ja',
         voteNo: '/nein'
+    },
+    chatActions: {
+        voteYes: {
+            successEvent: 'vote',
+            failureEvent: ['changeOpinionError', 'noPollError']
+        },
+        voteNo: {
+            successEvent: 'vote',
+            failureEvent: ['changeOpinionError', 'noPollError']
+        }
     }
 }
 /*

@@ -3,8 +3,8 @@ const COMMAND_PREFIX = '/bank '
 module.exports = {
     chatPatterns: {
         balance: /^\[Bank\] Kontostand: (\d+)$/,
-        depositSuccess: /^\[Bank\] Du hast (\d+) auf dein Bankkonto eingezahlt\.$/,
-        withdrawSuccess: /^\[Bank\] Du hast (\d+) von deinem Bankkonto abgehoben\.$/,
+        deposit: /^\[Bank\] Du hast (\d+) auf dein Bankkonto eingezahlt\.$/,
+        withdrawl: /^\[Bank\] Du hast (\d+) von deinem Bankkonto abgehoben\.$/,
         help: /^\[Bank\] Die Bank sichert dein Geld vor Verlust durch Serverfehler oder einem Reset\.$/,
 
         invalidNumberError: /^\[Bank\] (.+) ist keine gültige Zahl\.$/,
@@ -15,5 +15,18 @@ module.exports = {
         getBalance: COMMAND_PREFIX + 'guthaben',
         deposit: COMMAND_PREFIX + 'einzahlen $1',
         withdraw: COMMAND_PREFIX + 'abheben $1'
+    },
+    chatActions: {
+        getBalance: {
+            successEvent: 'balance'
+        },
+        deposit: {
+            successEvent: 'deposit',
+            failureEvents: ['invalidNumberError', 'insufficientAmountError']
+        },
+        withdraw: {
+            successEvent: 'withdrawl',
+            failureEvents: ['invalidNumberError', 'insufficientAmountError']
+        }
     }
 }

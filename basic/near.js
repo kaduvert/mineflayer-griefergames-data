@@ -5,6 +5,11 @@ module.exports = {
     commands: {
         getPlayers: '/near $1'
     },
+    chatActions: {
+        getPlayers: {
+            successEvent: 'playerList'
+        }
+    },
     playerListSeparator: ', ',
     playerListRegex: /^\S+ ┃ (\S+)\((\d+)m\)$/
 }

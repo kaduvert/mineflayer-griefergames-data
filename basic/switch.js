@@ -61,7 +61,7 @@ module.exports = {
 	},
 	npc: {
 		identifier: 'Citybuild 1.8',
-		onInteract: 'teleport',
+		onInteract: 'forcedMove',
 		position: [16, 71, -170],
 		world: 'hub'
 	}

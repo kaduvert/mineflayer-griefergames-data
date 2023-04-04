@@ -17,5 +17,18 @@ module.exports = {
 		as: '/d $1',
 		remove: '/ud',
 		getStatus: '/d status'
-	}
+	},
+	chatActions: {
+		as: {
+			successEvent: 'disguised',
+			failureEvents: ['unknownArgumentsError', 'insufficientPermissionsError', 'pluginForbidsActionError']
+		},
+		remove: {
+			successEvent: 'removed',
+            failureEvent: 'notFound'
+		},
+		getStatus: {
+			successEvents: ['status', 'notFound']
+		}
+	},
 }

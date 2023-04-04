@@ -17,6 +17,7 @@ module.exports = {
     mapInfo: require('./mapInfo'),
     // prefix: require('./prefix'),
     // profile: require('./profile'),
+    // ptime: require('./ptime'),
     punishment: require('./punishment'),
     spawner: require('./spawner'),
     // specialPotions: require('./specialPotions'),

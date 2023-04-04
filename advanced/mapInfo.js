@@ -19,5 +19,11 @@ module.exports = {
 	},
 	commands: {
 		get: '/mapinfo'
+	},
+	chatActions: {
+		get: {
+			successEvent: 'info',
+			failureEvent: 'noDataError'
+		}
 	}
 }

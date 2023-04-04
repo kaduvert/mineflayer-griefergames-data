@@ -4,6 +4,11 @@ module.exports = {
     },
     commands: {
         teleport: '/spawn'
+    },
+    chatActions: {
+        teleport: {
+            successEvent: 'forcedMove',
+            failureEvent: 'spamWarning'
+        } // TODO: use teleport.js data
     }
 }
-
