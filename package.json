@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KadaverBrutalo10/mineflayer-griefergames-data.git"
+    "url": "git+https://github.com/kaduvert/mineflayer-griefergames-data.git"
   },
   "keywords": [
     "griefergames",
@@ -17,7 +17,7 @@
   "author": "kaduvert",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/KadaverBrutalo10/mineflayer-griefergames-data/issues"
+    "url": "https://github.com/kaduvert/mineflayer-griefergames-data/issues"
   },
-  "homepage": "https://github.com/KadaverBrutalo10/mineflayer-griefergames-data#readme"
+  "homepage": "https://github.com/kaduvert/mineflayer-griefergames-data#readme"
 }
