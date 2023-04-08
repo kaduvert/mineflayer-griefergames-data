@@ -15,6 +15,7 @@ module.exports = {
     privateChat: require('./privateChat'),
     serverInfo: require('./serverInfo'),
     shutdown: require('./shutdown'),
+    slowChat: require('./slowChat'),
     spawn: require('./spawn'),
     switch: require('./switch'),
     teleport: require('./teleport'),
