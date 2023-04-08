@@ -1,8 +1,8 @@
 module.exports = {
     itemPatterns: {
         orbBalance: {
-            title: /^Deine Orbs$/,
-            lore: [
+            display: [
+                /^Deine Orbs$/,
                 /^Du besitzt aktuell (\d+\.) Orbs\.$/
             ]
         }

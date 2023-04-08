@@ -27,71 +27,71 @@ module.exports = {
     itemPatterns: {
         // deactivated spawner stuff
         stats: {
-            title: /^(.+)$/,
-            lore: [
+            display: [
+                /^(.+)$/,
                 /^Klicke, um zur Statistik zu gelangen\.$/,
                 /^Die Statistik aktualisiert sich nur einmal am Tag\.$/
             ]
         },
         activatePassiveMode: {
-            title: /^Passiv-Modus aktivieren$/,
-            lore: [
+            display: [
+                /^Passiv-Modus aktivieren$/,
                 /^Klicke, um den passiven Modus zu aktivieren\.$/
             ]
         },
 
         // activated spawner stuff
         lockedSlot: {
-            title: /^Upgrade-Stufe ([IVX]+)$/
+            display: /^Upgrade-Stufe ([IVX]+)$/
         },
         availableExperience: {
-            title: /^Aktuelle Erfahrungspunkte$/,
-            lore: [
+            display: [
+                /^Aktuelle Erfahrungspunkte$/,
                 /^(\d+) Erfahrungspunkte$/
             ]
         },
         nextUpdate: {
-            title: /^Nächste Aktualisierung$/,
-            lore: [
+            display: [
+                /^Nächste Aktualisierung$/,
                 /^([\d\.]+) ([\d:]+) Uhr$/
             ]
         },
         settings: {
-            title: /^Einstellungen$/,
-            lore: [
+            display: [
+                /^Einstellungen$/,
                 /^Klicke, um zu den Einstellungen zu kommen\.$/
             ]
         },
 
         // spawner menu stuff
         upgrade: {
-            title: /^(\S+)-Upgrade-Stufe ([IVX]+)$/,
-            lore: [
+            display: [
+                /^(\S+)-Upgrade-Stufe ([IVX]+)$/,
                 /^Erhöht (.+)$/
             ]
         },
         itemFilter: {
-            lore: [
+            display: [
                 /^Schalte den Item-Filter frei,$/,
                 /^um den Drop zu deaktivieren\.$/
             ]
         },
         filterUpgrade: {
-            title: /^Filter-Upgrade$/,
-            lore: [
+            display: [
+                /^Filter-Upgrade$/,
                 /^Lässt Item-Drops \(de-\)aktivieren\.$/,
                 /^Kosten: (.+)$/
             ]
         },
         back: {
-            title: /^Zurück$/,
-            lore: [
+            display: [
+                /^Zurück$/,
                 /^Klicke, um auf die vorherige Seite zu gelangen\.$/
             ]
         },
         deactivatePassiveMode: {
-            title: /^Passiv-Modus deaktivieren$/,
-            lore: [
+            display: [
+                /^Passiv-Modus deaktivieren$/,
                 /^Klicke, um den passiven Modus zu deaktivieren\.$/,
                 /^Du kannst alle (\d+) Minuten den Modus ändern\.$/
             ]

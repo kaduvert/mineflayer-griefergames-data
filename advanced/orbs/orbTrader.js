@@ -8,8 +8,8 @@ module.exports = {
     },
     itemPatterns: {
         sellOption: {
-            title: /^(.+) (.+)$/,
-            lore: [
+            display: [
+                /^(.+) (.+)$/,
                 /^Klicke, um ([\d\.]+) (.+) für ([\d\.]+) Orbs zu verkaufen\.$/
             ]
         }
@@ -47,25 +47,25 @@ windowPatterns: {
 itemPatterns: {
     unnamed: {
         title: /^Ein Gras$/,
-            lore: [
+            display: [
                 /^Klicke, um ein Gras für 20 Orbs zu verkaufen.$/
             ]
     },
     unnamed: {
         title: /^64 Gras$/,
-            lore: [
+            display: [
                 /^Klicke, um 64 Gras für 1.280 Orbs zu verkaufen.$/
             ]
     },
     unnamed: {
         title: /^Gesamtes Gras$/,
-            lore: [
+            display: [
                 /^Klicke, um 0 Gras für 0 Orbs zu verkaufen.$/
             ]
     },
     unnamed: {
         title: /^Preisfall$/,
-            lore: [
+            display: [
                 /^Aktuell können 10.000 Gras verkauft werden,$/,
                 /^bevor der Preis fällt.$/,
                 /^Stufe: 1/2$ /
@@ -73,7 +73,7 @@ itemPatterns: {
     },
     unnamed: {
         title: /^Zurück zur vorherigen Seite$/,
-            lore: [
+            display: [
                 /^Klicke, um zur vorherigen Seite zurückzugelangen.$/
             ]
     },

@@ -8,7 +8,8 @@ module.exports = {
 	},
 	itemPatterns: {
 		protectedMap: {
-			lore: [
+			display: [
+				undefined,
 				/^Ersteller der Karte: (\S+)$/
 			]
 		}
@@ -19,7 +20,7 @@ module.exports = {
 	chatActions: {
 		toggleProtection: {
 			successEvents: ['protectionAdded', 'protectionRemoved'],
-            failureEvent: 'notOwnerError'
+			failureEvent: 'notOwnerError'
 		}
 	}
 }

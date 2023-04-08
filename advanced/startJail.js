@@ -18,60 +18,69 @@ module.exports = {
     },
     itemPatterns: {
         purchaseToken: {
-            title: /^Gefängins-Token kaufen$/,
-            lore: [
+            display: [
+                /^Gefängins-Token kaufen$/,
                 /^Klicke, um einen Token für (\d+)\$ zu kaufen\.$/
             ]
         },
         tokenBalance: {
-            title: /^Anzahl der Gefängnis-Tokens$/,
-            lore: [
+            display: [
+                /^Anzahl der Gefängnis-Tokens$/,
                 /^Gefängnis-Tokens: (\d+)$/
             ]
         },
         confirmPurchase: {
-            title: /^Ja\.$/,
-            lore: [
+            display: [
+                /^Ja\.$/,
                 /^Klicke, um den Kauf zu bestätigen\.$/
             ]
         },
         cancelPurchase: {
-            title: /^Nein\.$/,
-            lore: [
+            display: [
+                /^Nein\.$/,
                 /^Klicke, um den Kauf abzubrechen\.$/
             ]
         },
     },
-    windowPatterns: {
-        menu: /^Gefängnis-Token$/,
-        confirmPurchase: /^Kaufbestätigung$/
+    windows: {
+        menu: {
+            titlePattern: /^Gefängnis-Token$/,
+            requiredSlots: 0,
+            actions: {
+                startTokenPurchase: {
+                    itemToClick: 'purchaseToken',
+                    successEvent: 'windowOpen:confirmPurchase'
+                }
+            },
+            getters: {
+                tokenBalance: {
+                    // ?: [1, 0]
+                }
+            }
+        },
+        confirmPurchase: {
+            titlePattern: /^Kaufbestätigung$/,
+            requiredSlots: 0,
+            actions: {
+                confirmTokenPurchase: {
+                    itemToClick: 'confirmPurchase',
+                    successEvent: 'purchaseSuccess',
+                    failureEvent: 'insufficientBalanceError'
+                },
+                cancelTokenPurchase: {
+                    itemToClick: 'cancelPurchase',
+                    successEvent: 'purchaseCancelled',
+                }
+            }
+        }
     },
     chatActions: {
-        target: { // TODO: find solution
-            successEvent: 'misc:startJail:',// + username,
+        target: {
+            successEvent: 'misc:startJail:$1',
             failureEvents: ['help', 'noTokensError']
         },
         openMenu: {
             successEvent: 'windowOpen:menu'
-        }
-    },
-    windowActions: {
-        menu: {
-            startTokenPurchase: {
-                itemToClick: 'purchaseToken',
-                successEvent: 'windowOpen:confirmPurchase'
-            }
-        },
-        confirmPurchase: {
-            confirmTokenPurchase: {
-                itemToClick: 'confirmPurchase',
-                successEvent: 'purchaseSuccess',
-                failureEvent: 'insufficientBalanceError'
-            },
-            cancelTokenPurchase: {
-                itemToClick: 'cancelPurchase',
-                successEvent: 'purchaseCancelled',
-            }
         }
     }
 }
