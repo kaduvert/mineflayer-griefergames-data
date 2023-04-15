@@ -2,13 +2,32 @@ module.exports = {
 	chatPatterns: {
 		loadedData: /^\[Switcher\] Daten heruntergeladen\!$/,
 		serverFull: /^Der Server ist voll\. \[\d+\/\d+\]$/,
+		switchStarted: /^$GG Serverwechsel auf (.+) wurde gestartet\.+$/,
 		switchFailed: /^Kicked whilst connecting to ([a-zA-Z0-9\-_]+): (.+)$/,
 		switchSucceeded: /^$GG Du wurdest automatisch auf ([a-zA-Z0-9\-_]+) verbunden\.$/,
 
 		timeout: /^Du kannst erst am ([\d\.]+) um ([\d:]+) wieder beitreten\./,
 		portalWarning: /^$GG Bitte warte 12 Sekunden zwischen jedem Teleport\.$/,
 		lobbyConnectionAttempt: /^Versuche auf die Lobby zu verbinden\.$/,
-		portalRoomConnectionAttempt: /^Versuche in den Portalraum zu verbinden\.$/,
+		portalroomConnectionAttempt: /^Versuche in den Portalraum zu verbinden\.$/,
+		portalroomJoin: /^$GG Du bist im Portalraum\. Wähle deinen Citybuild aus\.$/,
+	},
+	commands: {
+		joinPortalroom: '/portal',
+		openMenu: '/switch',
+		to: '/switch $1'
+	},
+	chatActions: {
+		joinPortalroom: {
+			successEvent: 'portalroomJoin',
+			failureEvent: 'switchFailed'
+		},
+		openMenu: {
+			successEvent: 'windowOpen:chooseServer'
+		},
+		to: {
+			successEvent: 'switchStarted'
+		}
 	},
 	hologramPatterns: {
 		serverStatus: [
