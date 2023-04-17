@@ -6,6 +6,7 @@ module.exports = {
     globalChat: require('./globalChat'),
     homes: require('./homes'),
     ignore: require('./ignore'),
+    nick: require('./nick'),
     itemClear: require('./itemClear'),
     mobRemover: require('./mobRemover'),
     money: require('./money'),
