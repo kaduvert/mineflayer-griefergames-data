@@ -1,12 +1,14 @@
 module.exports = {
 	chatPatterns: {
-		spamWarning: /^\[\S+\] Du kannst diesen Befehl erst nach (\d+) Sekunden benutzen\.$/,
+		spamWarning: /^Bitte unterlasse das Spammen von Commands\!$/,
+		/*
 		spamWarning: /^\[\S+\] Du musst (\d+) Sekunden warten, bevor du diesen Befehl erneut ausführen kannst\.$/,
 		spamWarning: /^\[\S+\] Du kannst diesen Befehl nur alle (\d+) Sekunden benutzen\.$/,
 		spamWarning: /^$GG Bitte warte kurz\.$/,
-		spamWarning: /^Bitte unterlasse das Spammen von Commands\!$/,
+		spamWarning: /^\[\S+\] Du kannst diesen Befehl erst nach (\d+) Sekunden benutzen\.$/,
 		spamWarning: /^\[Switcher\] Daten werden noch heruntergeladen\. Bitte warte \.\.\.$/,
 		spamWarning: /^\[Chat\] Bitte warte einen kleinen Moment\.$/,
+		*/
 
 		playerMessage: /^(?:\[.+\] )?(\S+) ┃ (\S+) » (.*)$/,
 		broadcast: /^\[Rundruf\] (.*)$/,

@@ -1,8 +1,10 @@
 module.exports = {
     chatPatterns: {
         playerNotFoundError: /^Fehler: Spieler nicht gefunden\.$/,
+        /*
         playerNotFoundError: /^$GG Der Spieler \S+ wurde nicht gefunden\.$/,
         playerNotFoundError: /^$GG Der Spieler ist nicht online!$/,
+        */
     },
     nicknamePrefix: '~',
     commands: {
