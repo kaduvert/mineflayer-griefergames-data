@@ -1,5 +1,3 @@
-const COMMAND_PREFIX = '/ignore '
-
 module.exports = {
 	chatPatterns: {
 		receivedMessage: /^\[\S+ ┃ (\S+) -> mir\] (.*)$/,
@@ -16,7 +14,7 @@ module.exports = {
 	chatActions: {
 		send: {
 			successEvent: 'sentMessage',
-			failureEvents: ['receiverToggledMessagesError', 'playerNotFoundError'],
+			failureEvents: ['receiverToggledMessagesError', 'playerUtils->playerNotFoundError'],
 		},
 		toggle: {
 			successEvents: ['activated', 'deactivated']
