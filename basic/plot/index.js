@@ -23,26 +23,33 @@ module.exports = {
         sethomeNotTrustedError: /^$GG Du musst auf dem Grundstück vertraut sein, um den Spawn-Punkt des Grundstücks zu versetzen\.$/,
         notFoundError: /^$GG Dein Suchmuster ergab keine Treffer\.$/,
     },
-    arrayEndIndicator: ']',
-    textFlagEndRegex: /, [a-z\_\-]:.+/,
-    IdSeparator: ';',
-    flagKeyValueSeparator: ':',
-    multiLinePlotInfoRegex: /^ID: (-?\d+;-?\d+) \nAlias: ([^ ]+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: (.+) \nVertraut: (.+) \nVerboten: (.+) \nFlags: (.+)$/s,
-    infoNoPlayersIndicator: 'Keine',
-    flagsSeparater: ', ',
-    flagTypes: {
-        'time': 'Number',
-        'music': 'Number',
-        'use': 'Array',
-        'break': 'Array',
-        'place': 'Array',
-        'description': 'Text',
-        'greeting': 'Text',
-        'farewell': 'Text'
+    info: {
+        arrayEndIndicator: ']',
+        textFlagEndRegex: /, [a-zA-Z\_\-]+:.+/,
+        idSeparator: ';',
+        flagKeyValueSeparator: ':',
+        multiLineRegex: /^ID: (-?\d+;-?\d+) \nAlias: ([^ ]+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: +(.+) \nVertraut: +(.+) \nVerboten: +(.+) \nFlags: (.+)$/s,
+        noPlayersIndicator: 'Keine',
+        unknownPlayerIndicator: 'Unbekannt',
+        flagsSeparator: ', ',
+        flagTypes: {
+            default: 'Boolean',
+            'plotFrames': 'Number',
+            'time': 'Number',
+            'music': 'Number',
+            'use': 'Array',
+            'break': 'Array',
+            'place': 'Array',
+            'weather': 'Text', // TODO: implement as enum
+            'description': 'Text',
+            'greeting': 'Text',
+            'farewell': 'Text'
+        }
     },
     commands: {
-        goto: COMMAND_PREFIX + 'h $1',
         getInfo: COMMAND_PREFIX + 'i $1',
+
+        goto: COMMAND_PREFIX + 'h $1',
         gotoMiddle: PLOT_ACTION_COMMAND_PREFIX + 'middle',
 
         setAlias: PLOT_ACTION_COMMAND_PREFIX + 'alias set $2',
@@ -62,6 +69,72 @@ module.exports = {
         removeDescription: PLOT_ACTION_COMMAND_PREFIX + 'desc',
 
         setFlag: PLOT_ACTION_COMMAND_PREFIX + 'flag set $2 $3'
+    },
+    chatActions: {
+        getInfo: {
+            successEvent: 'misc:plot->info',
+            failureEvent: 'unclaimedError'
+        },
+
+        goto: {
+            successEvent: 'forcedMove',
+            failureEvents: ['deniedError', 'invalidNumberError']
+        },
+        gotoMiddle: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        setAlias: {
+            successEvent: '',
+            failureEvent: ''
+        },
+        removeAlias: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        setBiome: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        kick: {
+            successEvent: '',
+            failureEvent: ''
+        },
+        ban: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        add: {
+            successEvent: '',
+            failureEvent: ''
+        },
+        trust: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        remove: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        setDescription: {
+            successEvent: '',
+            failureEvent: ''
+        },
+        removeDescription: {
+            successEvent: '',
+            failureEvent: ''
+        },
+
+        setFlag: {
+            successEvent: '',
+            failureEvent: ''
+        }
     }
 }
 
