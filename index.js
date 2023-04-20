@@ -23,7 +23,7 @@ function getAllData() {
 
             // pattern alias logic
             const chatPatterns = returnData[moduleName].chatPatterns
-            if (chatPatterns && Object.keys(chatPatterns).length) {
+            if (chatPatterns) {
                 Object.keys(chatPatterns).forEach(patternKey => {
                     const chatPattern = chatPatterns[patternKey]
                     if (chatPattern instanceof Array) {
