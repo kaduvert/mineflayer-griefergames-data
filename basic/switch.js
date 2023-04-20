@@ -11,6 +11,7 @@ module.exports = {
 		lobbyConnectionAttempt: /^Versuche auf die Lobby zu verbinden\.$/,
 		portalroomConnectionAttempt: /^Versuche in den Portalraum zu verbinden\.$/,
 		portalroomJoin: /^$GG Du bist im Portalraum\. Wähle deinen Citybuild aus\.$/,
+		spamWarning: /^\[Switcher\] Daten werden noch heruntergeladen\. Bitte warte \.\.\.$/
 	},
 	commands: {
 		joinPortalroom: '/portal',
