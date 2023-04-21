@@ -46,6 +46,31 @@ module.exports = {
             'farewell': 'Text'
         }
     },
+    coordination: {
+        offset: 1,
+        plotDimensions: {
+            default: {
+                usableSize: 32,
+                padding: 2.5,
+                edge: true
+            },
+            'cb7': {
+                usableSize: 32, // ?
+                padding: 3.5,
+                edge: true
+            },
+            'nature': {
+                usableSize: 32, // ?
+                padding: 0,
+                edge: false
+            },
+            'extreme': {
+                usableSize: 32, // ?
+                padding: 0,
+                edge: false
+            }
+        }
+    },
     commands: {
         getInfo: COMMAND_PREFIX + 'i $1',
 
