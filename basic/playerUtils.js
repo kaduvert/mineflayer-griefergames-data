@@ -12,10 +12,16 @@ module.exports = {
         getEnderChest: '/ec $1',
         getMiscView: '/view $1'
     },
-    windowPatterns: {
-        inventory: /^Inventory$/,
-        enderChest: /^Ender Chest$/,
-        miscView: /^Ansicht - (\S+)$/,
+    windows: {
+        inventory: {
+            titlePattern: /^Inventory$/
+        },
+        enderChest: {
+            titlePattern: /^Ender Chest$/
+        },
+        miscView: {
+            titlePattern: /^Ansicht - (\S+)$/
+        },
     },
     chatActions: {
         getInventory: {
