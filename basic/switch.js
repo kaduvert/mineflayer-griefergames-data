@@ -16,7 +16,7 @@ module.exports = {
 	commands: {
 		joinPortalroom: '/portal',
 		openMenu: '/switch',
-		to: '/switch $1'
+		toServer: '/switch $1'
 	},
 	chatActions: {
 		joinPortalroom: {
@@ -26,7 +26,7 @@ module.exports = {
 		openMenu: {
 			successEvent: 'windowOpen:chooseServer'
 		},
-		to: {
+		toServer: {
 			successEvent: 'switchStarted'
 		}
 	},
