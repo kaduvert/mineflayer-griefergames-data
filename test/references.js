@@ -1,5 +1,4 @@
 const assert = require('assert')
-const { chatPatterns } = require('../basic/plot')
 
 const branches = [
     'basic',
