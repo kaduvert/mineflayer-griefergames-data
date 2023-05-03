@@ -4,7 +4,7 @@
   "description": "Contains data for use with mineflayer bots directed at the popular german minecraft server GrieferGames (griefergames.net)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kaduvert/mineflayer-griefergames-data/issues"
   },
-  "homepage": "https://github.com/kaduvert/mineflayer-griefergames-data#readme"
+  "homepage": "https://github.com/kaduvert/mineflayer-griefergames-data#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
 }
