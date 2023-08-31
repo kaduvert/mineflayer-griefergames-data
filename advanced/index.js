@@ -23,6 +23,7 @@ module.exports = {
     // specialPotions: require('./specialPotions'),
     startJail: require('./startJail'),
     status: require('./status'),
+    teleporter: require('./teleporter'),
     // trails: require('./trails'),
     vote: require('./vote')
 }
