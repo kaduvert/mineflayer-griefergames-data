@@ -18,7 +18,7 @@ branches.forEach(branchName => {
                             const chatAction = chatActions[chatActionName]
 
                             it(chatActionName, function () {
-                                const commandName = module.commands[chatAction.command] ? chatAction.command : chatActionName
+                                const commandName = module.commands[chatAction.command] !== undefined ? chatAction.command : chatActionName
                                 assert(module.commands[commandName] !== undefined, 'has valid reference to command ' + commandName)
                             })
                         })
