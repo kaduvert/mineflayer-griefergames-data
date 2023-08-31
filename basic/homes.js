@@ -28,7 +28,7 @@ module.exports = {
         },
         teleportTo: {
             successEvent: 'forcedMove',
-            failureEvents: ['notFoundError', 'failure', 'spamWarning']
-        } // TODO: use teleport.js data
+            failureEvents: ['notFoundError', 'teleport->failure', 'teleport->spamWarning']
+        }
     }
 }

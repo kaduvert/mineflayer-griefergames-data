@@ -8,7 +8,7 @@ module.exports = {
     chatActions: {
         teleport: {
             successEvent: 'forcedMove',
-            failureEvent: 'spamWarning'
-        } // TODO: use teleport.js data
+            failureEvent: 'teleport->spamWarning'
+        }
     }
 }

@@ -13,7 +13,7 @@ module.exports = {
         },
         to: {
             successEvent: 'forcedMove',
-            failureEvent: 'spamWarning'
-        } // TODO: use teleport.js
+            failureEvent: 'teleport->spamWarning'
+        }
     }
 }
