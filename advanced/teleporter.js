@@ -18,7 +18,7 @@ module.exports = {
                 /^Du befindest dich gerade bei (.+)\.$/
             ]
         },
-        teleport: {
+        destination: {
             display: [
                 /^(.+)$/
             ],
@@ -28,12 +28,7 @@ module.exports = {
     windows: {
         selectDestination: {
             titlePattern: /^GS-Teleporter$/,
-            requiredSlots: 0,
-            actions: {
-                teleport: {
-                    successEvent: 'teleportSuccess'
-                }
-            }
+            requiredSlots: 0
         }
     }
 }
