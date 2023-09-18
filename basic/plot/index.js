@@ -22,6 +22,13 @@ module.exports = {
         ownerPermissionError: /^$GG Diese Aktion kann nur der Besitzer des Grundstücks ausführen\.$/,
         sethomeNotTrustedError: /^$GG Du musst auf dem Grundstück vertraut sein, um den Spawn-Punkt des Grundstücks zu versetzen\.$/,
         notFoundError: /^$GG Dein Suchmuster ergab keine Treffer\.$/,
+        playerNotFoundError: /^$GG Der Spieler asd wurde nicht gefunden\.$/,
+        alreadyError: /^$GG Dieser Spieler ist bereits in dieser Kategorie.$/,
+
+        playerDenied: /^$GG Der Spieler darf dieses Grundstück nicht mehr betreten\.$/,
+        playerAdded: /^$GG Dieser Spieler kann nun bauen, während der Grundstücksbesitzer online ist\.$/,
+        playerTrusted: /^$GG Der Spieler wurde erfolgreich auf diesem Grundstück vertraut\.$/,
+        playerRemoved: /^$GG Spieler wurde von diesem Grundstück entfernt\.$/
     },
     info: {
         arrayEndIndicator: ']',
@@ -106,8 +113,8 @@ module.exports = {
             failureEvents: ['deniedError', 'invalidNumberError']
         },
         gotoMiddle: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'forcedMove',
+            failureEvent: 'deniedError'
         },
 
         setAlias: {
@@ -125,26 +132,26 @@ module.exports = {
         },
 
         kick: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'entityGone',
+            failureEvents: ['playerNotFoundError', 'ownerPermissionError']
         },
         ban: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'playerDenied',
+            failureEvent: ['playerNotFoundError', 'ownerPermissionError']
         },
 
         add: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'playerAdded',
+            failureEvent: ['playerNotFoundError', 'ownerPermissionError', 'alreadyError']
         },
         trust: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'playerTrusted',
+            failureEvent: ['playerNotFoundError', 'ownerPermissionError', 'alreadyError']
         },
 
         remove: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'playerRemoved',
+            failureEvent: ['playerNotFoundError', 'ownerPermissionError']
         },
 
         setDescription: {
@@ -157,8 +164,8 @@ module.exports = {
         },
 
         setFlag: {
-            successEvent: '',
-            failureEvent: ''
+            successEvent: 'flagAdded',
+            failureEvent: ['ownerPermissionError', 'missingPermissionError']
         }
     }
 }
