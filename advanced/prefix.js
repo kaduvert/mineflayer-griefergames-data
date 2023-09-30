@@ -33,12 +33,21 @@ module.exports = {
         'Grün': 'a',
         'Blau': 'b',
 
-        // Team-Mitglieder Prefixe:
-        'Dunkelgrün': '2',
+        // Rang Defaults:
+        'Hellgrau': '7',
+        // 'Golden': '6',
+        // 'Blau': 'b',
+        // 'Rot': 'c',
+        'Dunkelblau': '9',
         'Dunkelrot': '4',
-        'Dunkelblau': '1',
+        'Pink': 'd',
+
+        // Specials:
+        'Lila': '5',
         'Gelb': 'e',
-        'Türkis': '3'
+        'Türkis': '3',
+        'Dunkelgrün': '2',
+        'Dunkelblau': '1'
     }
 }
 
