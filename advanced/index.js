@@ -15,7 +15,7 @@ module.exports = {
     // jail: require('./jail'),
     // lottery: require('./lottery'),
     mapInfo: require('./mapInfo'),
-    // prefix: require('./prefix'),
+    prefix: require('./prefix'),
     // profile: require('./profile'),
     // ptime: require('./ptime'),
     punishment: require('./punishment'),
