@@ -13,6 +13,8 @@ module.exports = {
         'Halloween': '66ee787',
         'Halloween-alt': '8877e6e',
         'Galaxy': '55ddbb33',
+        'Ocean': '119933bb',
+        'Früchte': '2ae6c',
         'PinkWeiss': 'ddff',
         'WeissGrau': 'ff77',
         'DoppelGelb': '66ee',
@@ -22,6 +24,7 @@ module.exports = {
         'DoppelGrau': '8877',
         'DoppelLila': '55dd',
         'Rot-weiß': ['4', 'f'],
+        'Gelb-weiß': ['e', 'f'],
 
         'Weiß': 'f',
         'Golden': '6',
