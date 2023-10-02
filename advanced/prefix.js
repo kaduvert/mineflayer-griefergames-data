@@ -33,7 +33,7 @@ module.exports = {
         'Grün': 'a',
         'Blau': 'b',
 
-        // Rang Defaults:
+        // rank defaults:
         'Hellgrau': '7',
         // 'Golden': '6',
         // 'Blau': 'b',
@@ -42,7 +42,7 @@ module.exports = {
         'Dunkelrot': '4',
         'Pink': 'd',
 
-        // Specials:
+        // specials:
         'Lila': '5',
         'Gelb': 'e',
         'Türkis': '3',

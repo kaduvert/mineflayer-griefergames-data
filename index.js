@@ -39,3 +39,4 @@ function getAllData() {
 }
 
 module.exports = getAllData()
+// TODO: spamWarnings, Aliases, Tests, Transformers

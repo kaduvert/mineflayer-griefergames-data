@@ -11,8 +11,8 @@ module.exports = {
         chatActivated: /^$GG Die Einstellung chat wurde aktiviert\.$/, // merge?
         chatDeactivated: /^$GG Die Einstellung chat wurde deaktiviert\.$/,
         chatMessage: /^\[Plot-Chat\] ?\[(-?\d+;-?\d+)\] \S+ ┃ (\S+) : (.*)$/, // currently, there is no space between plot chat and id
-        playerEntered: /^$GG \[(-?\d+;-?\d+)\] ([^ ]+) betrat dein Grundstück\.$/,
-        playerLeft: /^$GG \[(-?\d+;-?\d+)\] ([^ ]+) verließ dein Grundstück\.$/,
+        playerEntered: /^$GG \[(-?\d+;-?\d+)\] (\S+) betrat dein Grundstück\.$/,
+        playerLeft: /^$GG \[(-?\d+;-?\d+)\] (\S+) verließ dein Grundstück\.$/,
 
         invalidNumberError: /^$GG Das ist keine gültige Zahl\.$/,
         deniedError: /^$GG Du bist auf diesem Grundstück gebannt\.$/,
@@ -35,7 +35,7 @@ module.exports = {
         textFlagEndRegex: /, [a-zA-Z\_\-]+:.+/,
         idSeparator: ';',
         flagKeyValueSeparator: ':',
-        multiLineRegex: /^ID: (-?\d+;-?\d+) \nAlias: ([^ ]+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: +(.+) \nVertraut: +(.+) \nVerboten: +(.+) \nFlags: (.+)$/s,
+        multiLineRegex: /^ID: (-?\d+;-?\d+) \nAlias: (\S+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: +(.+) \nVertraut: +(.+) \nVerboten: +(.+) \nFlags: (.+)$/s,
         noPlayersIndicator: 'Keine',
         unknownPlayerIndicator: 'Unbekannt',
         flagsSeparator: ', ',
@@ -174,7 +174,7 @@ module.exports = {
 plotInfo: [
     /^-+ Grundstücksinfo -+$/,
     /^ID: (-?\d+;-?\d+) $/,
-    /^Alias: ([^ ]+) $/,
+    /^Alias: (\S+) $/,
     /^Besitzer: +(.+) $/,
     /^Biom: ([A-Z]+) $/,
     /^Helfer: (.+) $/,

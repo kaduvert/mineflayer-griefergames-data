@@ -1,7 +1,7 @@
 module.exports = {
     chatPatterns: {
-        request: /^[^ ]+ ┃ ([^ ]+) möchte sich zu dir teleportieren\.$/,
-        hereRequest: /^[^ ]+ ┃ ([^ ]+) möchte, dass du dich zu der Person teleportierst\.$/,
+        request: /^\S+ ┃ (\S+) möchte sich zu dir teleportieren\.$/,
+        hereRequest: /^\S+ ┃ (\S+) möchte, dass du dich zu der Person teleportierst\.$/,
         sent: /^Anfrage gesendet an \S+ ┃ (\S+)\.$/,
         accepted: /^\S+ | (\S+) hat deine Teleportierungsanfrage angenommen\.$/,
         refused: /^\S+ | (\S+) hat deine Teleportierungsanfrage abgelehnt\.$/,
@@ -16,7 +16,7 @@ module.exports = {
         notFoundError: /^Fehler: Du hast keine Teleportierungsanfragen\.$/,
         disallowedError: /^$GG Du darfst auf diesem Grundstück keine Teleportationsbefehle ausführen\.$/,
 
-        tpa: /^teleportieren zu [^ ]+ ┃ ([^ ]+)\.$/,
+        tpa: /^teleportieren zu \S+ ┃ (\S+)\.$/,
         cancelled: /^Laufende Teleportierung abgebrochen\.$/,
     },
     commands: {
