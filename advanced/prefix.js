@@ -28,25 +28,25 @@ module.exports = {
 
         'Weiß': 'f',
         'Golden': '6',
-        'Rot': 'c',
+        'Hellrot': 'c',
         'Magisch': 'ck',
-        'Grün': 'a',
-        'Blau': 'b',
+        'Hellgrün': 'a',
+        'Hellblau': 'b',
 
         // rank defaults:
         'Hellgrau': '7',
         // 'Golden': '6',
-        // 'Blau': 'b',
-        // 'Rot': 'c',
-        'Dunkelblau': '9',
-        'Dunkelrot': '4',
+        // 'Hellblau': 'b',
+        // 'Hellrot': 'c',
+        'Blau': '9',
+        'Rot': '4',
         'Pink': 'd',
 
         // specials:
         'Lila': '5',
         'Gelb': 'e',
         'Türkis': '3',
-        'Dunkelgrün': '2',
+        'Grün': '2',
         'Dunkelblau': '1'
     }
 }
