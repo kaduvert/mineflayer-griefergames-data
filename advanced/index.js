@@ -12,6 +12,7 @@ module.exports = {
     // edgeBlacksmith: require('./edgeBlacksmith'),
     // friends: require('./friends'),
     // hopper: require('./hopper'),
+    itemSign: require('./itemSign'),
     // jail: require('./jail'),
     // lottery: require('./lottery'),
     mapInfo: require('./mapInfo'),
