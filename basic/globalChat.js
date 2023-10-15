@@ -3,7 +3,7 @@ const COMMAND_PREFIX = '/globalchat '
 module.exports = {
     chatPatterns: {
         message: /^@\[(\S+)\] (\S+) ┃ (\S+) » (.*)$/,
-        deactiveError: /^\[GlobalChat\] Du kannst nicht im Global-Chat schreiben, da du ihn deaktiviert hast\.$/,
+        inactiveError: /^\[GlobalChat\] Du kannst nicht im Global-Chat schreiben, da du ihn deaktiviert hast\.$/,
 
         activated: /^\[GlobalChat\] Du hast den Global-Chat aktiviert\.$/,
         deactivated: /^\[GlobalChat\] Du hast den Global-Chat deaktiviert\.$/,
@@ -22,15 +22,15 @@ module.exports = {
     chatActions: {
         login: {
             successEvent: 'activated',
-            failureEvent: 'alreadyActivated',
+            failureEvent: 'alreadyActivatedError',
         },
         logout: {
-            successEvent: 'deativated',
-            failureEvent: 'alreadyDeativated'
+            successEvent: 'deactivated',
+            failureEvent: 'alreadyDeativatedError'
         },
         send: {
             successEvent: 'misc:sentMessage',
-            failureEvent: 'deactivatedError',
+            failureEvent: 'inactiveError',
         }
     },
 }
