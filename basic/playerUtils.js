@@ -7,6 +7,15 @@ module.exports = {
         */
     },
     nicknamePrefix: '~',
+    ranks: [
+        'Spieler',
+        'Premium',
+        'Ultra',
+        'Legende',
+        'Titan',
+        'Griefer',
+        'Supreme'
+    ],
     commands: {
         getInventory: '/invsee $1',
         getEnderChest: '/ec $1',
