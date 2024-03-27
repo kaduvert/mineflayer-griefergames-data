@@ -7,7 +7,7 @@ module.exports = {
 		notFound: /^Du bist nicht verkleidet.$/,
 
 		// (bat; visibility=everyone; visibility-param=; custom-name=; custom-name-visible)
-		// bot.chatAddPattern(/^\((\S+); visibility=everyone; visibility-param=; custom-name=; custom-name-visible\)$/, 'disguiseStatusRaw')
+		// disguiseStatusRaw: /^\((\S+); visibility=everyone; visibility-param=; custom-name=; custom-name-visible\)$/
 
 		unknownArgumentsError: /^Falsche Benutzung: (.+) sind unbekannte Argumente\.$/,
 		insufficientPermissionsError: /^Du darfst das nicht tun\.$/,
