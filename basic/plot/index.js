@@ -50,7 +50,8 @@ module.exports = {
             'weather': 'Text', // TODO: implement as enum
             'description': 'Text',
             'greeting': 'Text',
-            'farewell': 'Text'
+            'farewell': 'Text',
+            'unlimited-storage-collector': 'Text' // TODO: maybe refactor to Array<String>
         }
     },
     coordination: {
