@@ -35,7 +35,7 @@ module.exports = {
         textFlagEndRegex: /, [a-zA-Z\_\-]+:.+/,
         idSeparator: ';',
         flagKeyValueSeparator: ':',
-        multiLineRegex: /^ID: (-?\d+;-?\d+) \nAlias: (\S+) \nBesitzer: +(.+) \nBiom: ([A-Z]+) \nHelfer: +(.+) \nVertraut: +(.+) \nVerboten: +(.+) \nFlags: (.+)$/s,
+        multiLineRegex: /^ID: (-?\d+;-?\d+) \nAlias: (\S+) \nBesitzer: +(.+) \nBiom: ([A-Z_]+) \nHelfer: +(.+) \nVertraut: +(.+) \nVerboten: +(.+) \nFlags: (.+)$/s,
         noPlayersIndicator: 'Keine',
         unknownPlayerIndicator: 'Unbekannt',
         flagsSeparator: ', ',
