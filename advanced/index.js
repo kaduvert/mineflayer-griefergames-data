@@ -5,7 +5,7 @@ module.exports = {
     antiCopy: require('./antiCopy'),
     bank: require('./bank'),
     // booster: require('./booster'),
-    // caseOpening: require('./caseOpening'),
+    caseOpening: require('./caseOpening'),
     // clan: require('./clan'),
     // deleteparticle: require('./deleteparticle'),
     disguise: require('./disguise'),
