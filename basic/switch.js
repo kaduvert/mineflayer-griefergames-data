@@ -6,6 +6,7 @@ module.exports = {
 		switchFailed: /^Kicked whilst connecting to ([a-zA-Z0-9\-_]+): (.+)$/,
 		switchSucceeded: /^$GG Du wurdest automatisch auf ([a-zA-Z0-9\-_]+) verbunden\.$/,
 
+		maintenanceMode: /^Der Server ist gerade im Wartungsmodus\.$/,
 		timeout: /^Du kannst erst am ([\d\.]+) um ([\d:]+) wieder beitreten\./,
 		portalWarning: /^$GG Bitte warte 12 Sekunden zwischen jedem Teleport\.$/,
 		lobbyConnectionAttempt: /^Versuche auf die Lobby zu verbinden\.$/,
