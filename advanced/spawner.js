@@ -19,10 +19,16 @@ module.exports = {
         */
     },
     storageWindowTimeout: 30 * 1000,
-    windowPatterns: {
-        inactive: /^Spawner - Aktivieren$/,
-        storage: /^Spawner - Lager$/,
-        stats: /^Spawner - Statistik$/,
+    windows: {
+        inactive: {
+            titlePattern: /^Spawner - Aktivieren$/
+        },
+        storage: {
+            titlePattern: /^Spawner - Lager$/
+        },
+        stats: {
+            titlePattern: /^Spawner - Statistik$/
+        },
     },
     itemPatterns: {
         // deactivated spawner stuff
