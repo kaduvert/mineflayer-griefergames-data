@@ -37,6 +37,7 @@ module.exports = {
 			/^(\d+)\/(\d+)$/
 		]
 	},
+	portalroomTimeout: (3 * 60 * 1000),
 	joinDelay: 12 * 1000,
 	portalRoomSpawnBlock: [325, 66, 280],
 	rankCaps: {
