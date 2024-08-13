@@ -4,7 +4,7 @@ module.exports = {
     // perks: require('./perks'),
     antiCopy: require('./antiCopy'),
     bank: require('./bank'),
-    // booster: require('./booster'),
+    booster: require('./booster'),
     caseOpening: require('./caseOpening'),
     // clan: require('./clan'),
     // deleteparticle: require('./deleteparticle'),
