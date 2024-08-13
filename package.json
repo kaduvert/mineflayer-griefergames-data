@@ -1,6 +1,6 @@
 {
   "name": "mineflayer-griefergames-data",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Contains data for use with mineflayer bots directed at the popular german minecraft server GrieferGames (griefergames.net)",
   "main": "index.js",
   "scripts": {
