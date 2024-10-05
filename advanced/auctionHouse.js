@@ -19,16 +19,16 @@ module.exports = {
     itemPatterns: {
         activeAuctionedItem: {
             bottomLoreDisplay: [
-                /^$/,
+                /^ $/,
                 /^.+$/,
-                /^$/,
+                /^ $/,
                 /^\$ \| Aktuelles Gebot:$/,
                 /^([\d\.]+)\$$/,
-                /^$/,
+                /^ $/,
                 /^. \| Verbleibende Zeit:$/,
                 /^(.+)$/,
-                /^$/,
-                /^$/,
+                /^ $/,
+                /^ $/,
                 /^Klicke, um die Auktion zu öffnen\.$/
                 // potentially more mysteryMod text
             ] // TODO: add inactive auction lore
@@ -57,7 +57,7 @@ module.exports = {
                 /^Klicke ein Item in deinem Inventar an,$/,
                 /^um nach diesem Item zu filtern$/,
                 /^oder wechsel den Filter per Klick\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um den Filter zu wechseln\.$/
             ]
         },
@@ -65,22 +65,24 @@ module.exports = {
             display: [
                 /^Meine beobachteten Auktionen$/,
                 /^Hier kannst du deine beobachteten Auktionen verwalten\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um deine beobachteten Auktionen zu öffnen\.$/,
             ]
         },
         myAuctions: {
             display: [
+                /^Meine Auktionen$/,
                 /^Hier kannst du deine Auktionen verwalten\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um deine Auktionen zu öffnen\.$/
             ]
         },
         history: {
             display: [
+                /^Auktionshistorie$/,
                 /^Hier werden die abgelaufenen Auktionen der letzten$/,
                 /^(\d+) Tage angezeigt\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um die Auktionshistorie zu öffnen\.$/
             ]
         },
@@ -89,7 +91,7 @@ module.exports = {
             display: [
                 /^Auktion erstellen$/,
                 /^Erstelle eine neue Auktion\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um eine neue Auktion zu erstellen\.$/
             ]
         },
@@ -99,9 +101,9 @@ module.exports = {
             display: [
                 /^Startpreis festlegen$/,
                 /^Bei diesem Preis startet die Auktion\.$/,
-                /^$/,
+                /^ $/,
                 /^Startpreis: ([\d\.]+)\$$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um den Startpreis zu ändern\.$/
             ]
         },
@@ -109,9 +111,9 @@ module.exports = {
             display: [
                 /^Sofortkaufpreis festlegen$/,
                 /^Bei diesem Preis kann das Item sofort gekauft werden\.$/,
-                /^$/,
+                /^ $/,
                 /^Sofortkaufpreis: (deaktiviert|[\d\.]+)\$$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um den Sofortkaufpreis zu ändern\.$/
             ]
         },
@@ -119,16 +121,16 @@ module.exports = {
             display: [
                 /^Laufzeit festlegen$/,
                 /^Wie lange soll die Auktion laufen\?$/,
-                /^$/,
+                /^ $/,
                 /^Laufzeit: ([\d]+) Stunden$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um die Laufzeit zu ändern\.$/
             ]
         },
         createAuctionWithValues: {
             display: [
                 /^Auktion erstellen$/,
-                /^$/,
+                /^ $/,
                 /^Kosten: ([\d\.]+)\$$/,
                 /^Klicke, um die Auktion zu erstellen\.$/
             ]
@@ -137,7 +139,7 @@ module.exports = {
         confirmAction: {
             display: [
                 /^Bestätigen$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um die Aktion zu bestätigen\.$/
             ]
         },
@@ -153,7 +155,7 @@ module.exports = {
             display: [
                 /^Schnellgebot ([\d\.]+)\$$/,
                 /^Biete ([\d\.]+)\$ auf die Auktion\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um ([\d\.]+)\$ zu bieten\.$/
             ]
         },
@@ -161,7 +163,7 @@ module.exports = {
             display: [
                 /^Eigenen Betrag bieten$/,
                 /^Gib einen eigenen Betrag ein, um zu bieten\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um den Betrag einzugeben\.$/
             ]
         },
@@ -169,7 +171,7 @@ module.exports = {
             display: [
                 /^Gebotslimit ([\d\.]+)\$$/,
                 /^Setzt dein Gebotslimit der Auktion auf ([\d\.]+)\$\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um ([\d\.]+)\$ zu setzen\.$/
             ]
         },
@@ -177,7 +179,7 @@ module.exports = {
             display: [
                 /^Eigenes Gebotslimit setzen$/,
                 /^Gib ein eigenes Gebotslimit ein\.$/,
-                /^$/,
+                /^ $/,
                 /^Klicke, um das Gebotslimit einzugeben\.$/
             ]
         },
