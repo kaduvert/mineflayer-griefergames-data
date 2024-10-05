@@ -3,6 +3,7 @@ module.exports = {
     // orbs: require('./orbs'),
     // perks: require('./perks'),
     antiCopy: require('./antiCopy'),
+    auctionHouse: require('./auctionHouse'),
     bank: require('./bank'),
     booster: require('./booster'),
     caseOpening: require('./caseOpening'),
