@@ -17,21 +17,23 @@ module.exports = {
         submitValue: '$1'
     },
     itemPatterns: {
-        activeAuctionedItem: {
-            bottomLoreDisplay: [
-                /^ $/,
-                /^.+$/,
-                /^ $/,
+        auction: {
+            seperator: /^░+$/,
+            openAuction: /^Klicke, um die Auktion zu öffnen\.$/,
+            currentBid: [
                 /^\$ \| Aktuelles Gebot:$/,
                 /^([\d\.]+)\$$/,
-                /^ $/,
+            ],
+            immediatePurchasePrice: [
+                /^\$ \| Sofortkauf:$/,
+                /^([\d\.]+)\$$/,
+            ],
+            remainingTime: [
                 /^. \| Verbleibende Zeit:$/,
                 /^(.+)$/,
-                /^ $/,
-                /^ $/,
-                /^Klicke, um die Auktion zu öffnen\.$/
-                // potentially more mysteryMod text
-            ] // TODO: add inactive auction lore
+            ],
+            highestBidder: /^. Du bist aktuell Höchstbietender!$/
+            // TODO: add inactive auction lore
         },
 
         back: {
@@ -130,8 +132,10 @@ module.exports = {
         createAuctionWithValues: {
             display: [
                 /^Auktion erstellen$/,
+                /^Erstellt die Auktion mit den gewünschten Daten\.$/,
                 /^ $/,
                 /^Kosten: ([\d\.]+)\$$/,
+                /^ $/,
                 /^Klicke, um die Auktion zu erstellen\.$/
             ]
         },
@@ -139,7 +143,6 @@ module.exports = {
         confirmAction: {
             display: [
                 /^Bestätigen$/,
-                /^ $/,
                 /^Klicke, um die Aktion zu bestätigen\.$/
             ]
         },
@@ -181,6 +184,14 @@ module.exports = {
                 /^Gib ein eigenes Gebotslimit ein\.$/,
                 /^ $/,
                 /^Klicke, um das Gebotslimit einzugeben\.$/
+            ]
+        },
+        bidImmediatePurchasePrice: {
+            display: [
+                /^Sofortkauf$/,
+                /^Bietet direkt den Sofortkaufpreis von ([\d\.]+)\$\.$/,
+                /^ $/,
+                /^Klicke, um den Sofortkaufpreis zu bieten\.$/
             ]
         },
 
@@ -233,7 +244,7 @@ module.exports = {
                 },
                 createAuction: {
                     itemToClick: 'createAuctionWithValues',
-                    successEvent: 'windowOpen:confirmAuctionCreation'
+                    successEvent: 'windowOpen:confirmAction'
                 },
             },
         },
@@ -263,9 +274,13 @@ module.exports = {
                     itemToClick: 'fastBidLimit',
                     successEvent: 'bidSubmitted'
                 },
-                bitLimitCustom: {
+                bidLimitCustom: {
                     itemToClick: 'customBidLimit',
                     successEvent: 'submitValue'
+                },
+                bidImmediatePurchasePrice: {
+                    itemToClick: 'bidImmediatePurchasePrice',
+                    successEvent: 'bidSubmitted'
                 }
             },
         },
