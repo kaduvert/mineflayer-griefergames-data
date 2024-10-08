@@ -14,7 +14,8 @@ module.exports = {
         'Legende',
         'Titan',
         'Griefer',
-        'Supreme'
+        'Supreme',
+        'Hero'
     ],
     commands: {
         getInventory: '/invsee $1',

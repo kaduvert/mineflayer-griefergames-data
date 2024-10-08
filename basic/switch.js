@@ -47,7 +47,8 @@ module.exports = {
 		'Legende': 50,
 		'Titan': 85,
 		'Griefer': 115,
-		'Supreme': 150
+		'Supreme': 150,
+		'Hero': 150 // TODO: figure out correct value
 	},
 	relativePortalLocations: {
 		cb1: [-16, 0, 36],
