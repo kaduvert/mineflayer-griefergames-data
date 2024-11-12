@@ -14,7 +14,7 @@ module.exports = {
     near: require('./near'),
     playerUtils: require('./playerUtils'),
     privateChat: require('./privateChat'),
-    serverInfo: require('./serverInfo'),
+    scoreboard: require('./scoreboard'),
     shutdown: require('./shutdown'),
     slowChat: require('./slowChat'),
     spawn: require('./spawn'),
